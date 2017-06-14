@@ -2,8 +2,11 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "module": "es2015",
+    "lib": ["es6", "dom"],
+    "module": "es6",
     "baseUrl": "",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "types": []
   },
   "exclude": [
