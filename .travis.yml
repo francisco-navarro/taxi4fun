@@ -6,6 +6,9 @@ branches:
   only:
     - master
 
+sudo: required  
+dist: trusty  
+
 addons:
 apt:
   sources:
@@ -16,6 +19,10 @@ apt:
 
 before_install:
 #  - "curl -sSL https://github.com/goodeggs/travis-utils/raw/master/chrome.sh | sh"
+  - sh /etc/init.d/xvfb start || true
+  - sudo apt-get install -y libappindicator1 fonts-liberation
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome*.deb
 
 before_script:
   - npm install -g @angular/cli
