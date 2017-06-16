@@ -15,7 +15,7 @@ apt:
     - google-chrome-beta
 
 before_install:
- — sh -e /etc/init.d/xvfb start
+  - "curl -sSL https://github.com/goodeggs/travis-utils/raw/master/chrome.sh | sh"
 
 before_script:
   - npm install -g @angular/cli
