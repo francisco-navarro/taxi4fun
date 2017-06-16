@@ -27,6 +27,7 @@ import { InvoicesComponent } from './components/invoices/invoices.component';
       ])
   ],
   declarations: [
+    AppComponent,
     WelcomeComponent,
     ProfileComponent,
     InvoicesComponent,
