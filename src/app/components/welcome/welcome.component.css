@@ -1,0 +1,9 @@
+.logo img{
+  width: 250px;
+}
+
+.lista-enlaces {
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: left;
+}

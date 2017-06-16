@@ -9,7 +9,7 @@ import { RouterModule }   from '@angular/router';
 import { AppRoutesModule  } from './app-routes';
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './components/welcome.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';

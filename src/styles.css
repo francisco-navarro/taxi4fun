@@ -9,6 +9,18 @@
   margin: 0 auto;
 }
 
+a {
+  color: #2a3c93;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4860d6;
+   text-decoration: underline;
+}
+
 body {
+  background-color: #FAFAFA;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }

@@ -1,0 +1,19 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>Welcome</h1>
+  <div class="logo">
+    <img src="../assets/empanadilla.png"/>
+  </div>
+  <h3>Here are some links to help you start: </h3>
+
+  <md-list class="lista-enlaces" *ngFor="let link of links">
+    <md-list-item>
+      <md-icon md-list-icon>folder</md-icon>
+      <h4 md-line> 
+        <a routerLink="/{{link.uri}}">{{link.text}}</a>
+      </h4>
+      <p md-line>{{link.description}}</p>
+    </md-list-item>
+  </md-list>
+</div>
+
