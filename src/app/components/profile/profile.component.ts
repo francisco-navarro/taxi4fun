@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'y4f-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
