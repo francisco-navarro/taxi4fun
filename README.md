@@ -1,6 +1,6 @@
 # Taxi4fun
 
-![Alt text](https://travis-ci.org/taxy4fun/backoffice.svg?branch=master "Optional title")
+[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
 
 ## Development server
 
