@@ -6,6 +6,7 @@ import { RouterModule }   from '@angular/router';
 
 import { AppRoutesModule  } from './app-routes';
 
+import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
@@ -18,6 +19,10 @@ import { InvoicesComponent } from './components/invoices/invoices.component';
         {
           path: 'profile',
           component: ProfileComponent
+        },
+        {
+          path: 'welcome',
+          component: WelcomeComponent
         }
       ])
   ],
@@ -27,6 +32,6 @@ import { InvoicesComponent } from './components/invoices/invoices.component';
     InvoicesComponent,
   ],
   providers: [],
-  bootstrap: [WelcomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
