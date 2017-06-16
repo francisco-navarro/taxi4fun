@@ -1,4 +1,4 @@
-<md-toolbar color="primary" class="mat-elevation-z6">
+<md-toolbar color="primary" class="mat-elevation-z6 fixed">
   <button md-button [mdMenuTriggerFor]="menu">
   <md-icon>more_vert</md-icon>
   </button>
@@ -16,9 +16,12 @@
         <span>Disable alerts</span>
       </button>
     </md-menu>
-  <img class="small-logo" src="../assets/logo_white.png"/>
+  <a routerLink="/">
+    <img class="small-logo" src="../assets/logo_white.png"/>
+  </a>
   <span class="title-logo">taxy4fun</span>
   <span class="spacer"></span>
   <md-icon class="example-icon">feedback</md-icon>
   <span class="smaller">&nbsp; leave us feedback </span>
 </md-toolbar>
+<div class="bottom-spacer"></div>

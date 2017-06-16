@@ -24,7 +24,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
       ReactiveFormsModule,
       RouterModule.forRoot([
         {
-          path: '#profile',
+          path: 'profile',
           component: ProfileComponent
         },
         {
