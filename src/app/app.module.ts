@@ -5,9 +5,6 @@ import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { RouterModule }   from '@angular/router';
 
-
-import { AppRoutesModule  } from './app-routes';
-
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
