@@ -23,3 +23,7 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
+
+.mat-button {
+  padding: 0 8px!important;
+}
