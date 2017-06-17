@@ -4,7 +4,6 @@
 .centered-body {
   border-right: 1px solid #CCCCCC;
   border-left: 1px solid #CCCCCC;
-  min-height: 700px;
   max-width: 1100px;
   margin: 0 auto;
 }
