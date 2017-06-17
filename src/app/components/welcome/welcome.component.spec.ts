@@ -1,10 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 
+import { MaterialModule } from '@angular/material';
 import { WelcomeComponent } from './welcome.component';
+
 
 describe('WelcomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ MaterialModule ],
       declarations: [
         WelcomeComponent
       ],
@@ -20,13 +23,13 @@ describe('WelcomeComponent', () => {
   it(`should have as title 'app'`, async(() => {
     const fixture = TestBed.createComponent(WelcomeComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.name).toEqual('Jorge Nitales');
+    expect(app.links.length).toEqual(5);
   }));
 
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(WelcomeComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome');
+    expect(compiled.querySelector('h1').textContent).toContain('taxy4fun');
   }));
 });
