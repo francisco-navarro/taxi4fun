@@ -1,0 +1,27 @@
+#map {
+  height: 500px;
+  display : inline-flex!important;
+  width: 70%;
+}
+
+.colunm-30 {
+  display : inline-block!important;
+  width: 29%;
+}
+
+.lista-coches {
+  text-align: left;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  from{opacity:0}
+  to{opacity:1}
+}
+@-webkit-keyframes blink-animation {
+  from{opacity:1}
+  to{opacity:0}
+}
