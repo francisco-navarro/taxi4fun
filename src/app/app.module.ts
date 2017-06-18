@@ -9,8 +9,9 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 import { DriversComponent } from './components/drivers/drivers.component';
+import { CarsComponent } from './components/cars/cars.component';
 
 @NgModule({
     imports: [
@@ -50,8 +51,11 @@ import { DriversComponent } from './components/drivers/drivers.component';
     ProfileComponent,
     InvoicesComponent,
     ToolbarComponent,
+    ToolbarFeedbackDialog,
     DriversComponent,
+    CarsComponent,
   ],
+  entryComponents: [ToolbarFeedbackDialog],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
