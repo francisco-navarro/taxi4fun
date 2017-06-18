@@ -10,6 +10,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { InvoicesComponent } from './components/invoices/invoices.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { DriversComponent } from './components/drivers/drivers.component';
 
 @NgModule({
     imports: [
@@ -29,6 +30,14 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
           component: WelcomeComponent
         },
         {
+          path: 'invoices',
+          component: InvoicesComponent
+        },
+        {
+          path: 'drivers',
+          component: DriversComponent
+        },
+        {
           path: '',
           redirectTo: 'welcome',
           pathMatch: 'full'
@@ -41,6 +50,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     ProfileComponent,
     InvoicesComponent,
     ToolbarComponent,
+    DriversComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

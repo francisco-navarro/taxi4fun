@@ -12,7 +12,7 @@ export class WelcomeComponent {
       description: 'Detalles del perfil'
     },
     {
-      uri: 'profile',
+      uri: 'drivers',
       text: 'Listado de conductores',
       description: 'Acceso al listado de conductores'
     },
