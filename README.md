@@ -1,6 +1,7 @@
 # Taxi4fun
 
-[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
+master [![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
+develop [![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
 
 ## Development server
 
