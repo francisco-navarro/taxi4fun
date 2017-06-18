@@ -4,13 +4,13 @@
   width: 70%;
 }
 
+.lista-coches {
+  text-align: left;
+}
+
 .colunm-30 {
   display : inline-block!important;
   width: 29%;
-}
-
-.lista-coches {
-  text-align: left;
 }
 
 .blink {

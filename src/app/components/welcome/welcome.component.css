@@ -21,7 +21,7 @@ h1 .new {
 
 .welcome {
   background-image: url("../../../assets/mapa_intro.png");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   position: relative;
   min-height: 100%;
   padding-top: 50px;

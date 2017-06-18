@@ -20,17 +20,16 @@ export class CarsComponent implements OnInit {
   map;
 
   cars = [
-    {lat: 40.71031250340588,lng: -73.93592834472656, status: 'call_made'},
-    {lat: 40.71811937975345,lng: -73.98536682128906, status: 'call_merge'},
-    {lat: 40.73216945026674,lng: -73.98605346679688, status: 'call_missed'},
-    {lat: 40.71031250340588,lng: -73.93592834472656, status: 'call_merge'},
-    {lat: 40.71811937975345,lng: -73.98536682128906, status: 'call_received'},
-    {lat: 40.73216945026674,lng: -73.98605346679688, status: 'call_split'},
-    {lat: 40.71031250340588,lng: -73.93592834472656, status: 'call_made'},
-    {lat: 40.71811937975345,lng: -73.98536682128906, status: 'call_merge'},
-    {lat: 40.73216945026674,lng: -73.98605346679688, status: 'call_missed'},
-    {lat: 40.71811937975345,lng: -73.98536682128906, status: 'call_received'},
-    {lat: 40.73216945026674,lng: -73.98605346679688, status: 'call_merge'}
+    {lat: 40.726929,lng: -73.940735, status: 'call_made'},
+    {lat: 40.722116 , lng: -73.946228, status: 'call_merge'},
+    {lat: 40.719774 , lng: -73.93713, status: 'call_missed'},
+    {lat: 40.716261 , lng: -73.941936, status: 'call_merge'},
+    {lat: 40.738506 , lng: -73.934383, status: 'call_received'},
+    {lat: 40.744099 , lng: -73.956356, status: 'call_split'},
+    {lat: 40.742278 , lng: -73.959446, status: 'call_made'},
+    {lat: 40.745920 , lng: -73.969746, status: 'call_merge'},
+    {lat: 40.724978 , lng: -73.933697, status: 'call_missed'},
+    {lat: 40.739287 , lng: -73.935928, status: 'call_received'}
   ];
 
 
@@ -55,6 +54,22 @@ export class CarsComponent implements OnInit {
       scrollwheel: false,
       styles: this.mapStyle
     });
+    this.cars.forEach(car => this.drawPoint(car));
+  }
+
+  drawPoint(car) {
+    // var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+    return new google.maps.Marker({
+        position: {lat: car.lat,lng: car.lng},
+        map: this.map,
+        animation: google.maps.Animation.DROP,
+        // icon: image
+        icon: {
+          path: google.maps.SymbolPath.BACKWARD_OPEN_ARROW,
+          strokeColor: '#ed6e65',
+          scale: 2
+        }
+      });
   }
 
 }

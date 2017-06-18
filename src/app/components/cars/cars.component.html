@@ -14,9 +14,12 @@
       </p>
 
       <md-list class="lista-coches colunm-30" layout="column">
-        <md-list-item *ngFor="let car of cars">
+        <md-list-item *ngFor="let car of cars; let n = index">
           <md-icon md-list-icon>{{car.status}}</md-icon>
-          <p md-line class="blink">ACTIVE</p>
+          <p md-line>
+            [{{n}}]
+            <span class="blink">&nbsp; ACTIVE</span>
+          </p>
         </md-list-item>
       </md-list>
       

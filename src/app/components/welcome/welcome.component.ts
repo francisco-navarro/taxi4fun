@@ -29,5 +29,11 @@ export class WelcomeComponent {
       text: 'Facturas',
       icon: 'library_books',
       description: 'Acceso a listados de facturas'
+    },
+    {
+      uri: 'invoices',
+      text: 'Clientes',
+      icon: 'library_books',
+      description: 'Acceso a listados de clientes'
     }];
 }
