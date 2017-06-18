@@ -10,7 +10,7 @@
   
     <md-list class="lista-enlaces">
       <md-list-item *ngFor="let link of links">
-        <md-icon md-list-icon color="primary">folder</md-icon>
+        <md-icon md-list-icon color="primary">{{link.icon}}</md-icon>
         <h4 md-line> 
           <a routerLink="/{{link.uri}}">{{link.text}}</a>
         </h4>

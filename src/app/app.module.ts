@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { RouterModule }   from '@angular/router';
-import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
