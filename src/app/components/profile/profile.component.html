@@ -13,6 +13,33 @@
         A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
         bred for hunting.
       </p>
+      <p>
+        <md-slide-toggle
+            class="example-margin"
+            color="primary"
+            [checked]="checked"
+            [disabled]="disabled">
+          Slide me!
+        </md-slide-toggle>
+      </p>
+      <p>
+        <md-slide-toggle
+            class="example-margin"
+            color="accent"
+            [checked]="checked"
+            [disabled]="disabled">
+          Click me!
+        </md-slide-toggle>
+      </p>
+      <p>
+        <md-slide-toggle
+            class="example-margin"
+            color="warn"
+            [checked]="checked"
+            [disabled]="disabled">
+          Slide me!
+        </md-slide-toggle>
+      </p>
     </md-card-content>
     <md-card-actions>
       <button md-button>GUARDAR</button>
@@ -37,4 +64,48 @@
       <button md-button>DESCARTAR</button>
     </md-card-actions>
   </md-card>
+  <md-card class="profile-card">
+  <md-card-content>
+    <h2 class="example-h2">Slider configuration</h2>
+
+    <p class="profile-card">
+      <label class="example-margin">Color:</label>
+      <md-radio-group [(ngModel)]="color">
+        <md-radio-button class="example-margin" value="primary">
+          Primary
+        </md-radio-button>
+        <md-radio-button class="example-margin" value="accent">
+          Accent
+        </md-radio-button>
+        <md-radio-button class="example-margin" value="warn">
+          Warn
+        </md-radio-button>
+      </md-radio-group>
+    </p>
+
+    <p class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="checked">Checked</md-checkbox>
+    </p>
+
+    <p class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="disabled">Disabled</md-checkbox>
+    </p>
+  </md-card-content>
+</md-card>
+
+<md-card class="result profile-card">
+  <md-card-content>
+    <h2 class="example-h2">Result</h2>
+
+    <section class="example-section">
+      <md-slide-toggle
+          class="example-margin"
+          [color]="color"
+          [checked]="checked"
+          [disabled]="disabled">
+        Slide me!
+      </md-slide-toggle>
+    </section>
+  </md-card-content>
+</md-card>
 </div>

@@ -39,6 +39,10 @@ import { CarsComponent } from './components/cars/cars.component';
           component: DriversComponent
         },
         {
+          path: 'cars',
+          component: CarsComponent
+        },
+        {
           path: '',
           redirectTo: 'welcome',
           pathMatch: 'full'

@@ -17,7 +17,7 @@ export class WelcomeComponent {
       description: 'Acceso al listado de conductores'
     },
     {
-      uri: 'profile',
+      uri: 'cars',
       text: 'Coches activos',
       description: 'Localización de los coches activos'
     },
