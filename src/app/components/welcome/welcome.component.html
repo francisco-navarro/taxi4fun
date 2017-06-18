@@ -1,20 +1,21 @@
 <!--The whole content below can be removed with the new code.-->
 <div class="welcome" style="text-align:center">
   <h1>
-    <md-icon style="font-size: 1.5em;">new_releases</md-icon>
+    <md-icon class="new">new_releases</md-icon>
     &nbsp;  &nbsp; taxy4fun
   </h1>
   <h2>Welcome</h2>
   <h3>Here are some links to help you start: </h3>
 
-  <md-list class="lista-enlaces" *ngFor="let link of links">
-    <md-list-item>
-      <md-icon md-list-icon>folder</md-icon>
-      <h4 md-line> 
-        <a routerLink="/{{link.uri}}">{{link.text}}</a>
-      </h4>
-      <p md-line>{{link.description}}</p>
-    </md-list-item>
-  </md-list>
+  
+    <md-list class="lista-enlaces" *ngFor="let link of links">
+      <md-list-item>
+        <md-icon md-list-icon color="primary">folder</md-icon>
+        <h4 md-line> 
+          <a routerLink="/{{link.uri}}">{{link.text}}</a>
+        </h4>
+        <p md-line>{{link.description}}</p>
+      </md-list-item>
+    </md-list>
 </div>
 

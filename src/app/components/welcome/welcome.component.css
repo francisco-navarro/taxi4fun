@@ -4,6 +4,11 @@ h1 {
   padding-bottom: 50px;
 }
 
+h1 .new {
+  font-size: 1.5em;
+  color: #000551;
+}
+
 .logo img{
   width: 250px;
 }
