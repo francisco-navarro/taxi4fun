@@ -1,4 +1,6 @@
-# Taxi4fun
+# Backoffice Taxi4fun
+
+Proyecto de gestión de backoffice iniciado con CLI.
 
 ### master
 [![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)  
