@@ -5,7 +5,7 @@ Proyecto de gestión de backoffice iniciado con CLI.
 ### master
 [![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)  
 ### develop  
-[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
+[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=develop)](https://travis-ci.org/taxy4fun/backoffice-y4f)
 
 ## Development server
 
