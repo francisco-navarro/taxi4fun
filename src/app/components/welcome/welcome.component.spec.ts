@@ -1,12 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { MaterialModule } from '@angular/material';
+import { RouterModule }   from '@angular/router';
 import { WelcomeComponent } from './welcome.component';
 
 describe('WelcomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
+      imports: [ 
+        MaterialModule,
+        RouterModule
+      ],
       declarations: [
         WelcomeComponent
       ],
