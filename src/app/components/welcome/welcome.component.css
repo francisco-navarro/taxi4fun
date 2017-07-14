@@ -1,12 +1,17 @@
 h1 {
-  color: #3f51b5;
   font-size: 3em;
   padding-bottom: 50px;
 }
 
 h1 .new {
   font-size: 1.5em;
-  color: #000551;
+}
+
+.title-card {
+  background-color:#303f9f;
+  color: white;
+  margin-bottom: 20px;
+  padding: 80px;
 }
 
 .logo img{
@@ -20,9 +25,12 @@ h1 .new {
 }
 
 .welcome {
-  background-image: url("../../../assets/mapa_intro.png");
-  background-repeat: no-repeat;
   position: relative;
   min-height: 100%;
-  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
 }

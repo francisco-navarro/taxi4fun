@@ -1,12 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-.centered-body {
-  border-right: 1px solid #CCCCCC;
-  border-left: 1px solid #CCCCCC;
-  max-width: 1100px;
-  margin: 0 auto;
-}
 
 a {
   color: #2a3c93;
@@ -18,10 +12,21 @@ a:hover {
    text-decoration: underline;
 }
 
-body {
-  background-color: #FAFAFA;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #FAFAFA;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#mainContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
 }
 
 
@@ -39,4 +44,28 @@ input {
 .md-dialog {
   max-width: 90%;
   max-height: 90%;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url('./assets/fonts/material.woff2') format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }

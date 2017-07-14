@@ -1,11 +1,6 @@
 .fixed {
-  max-width: 1101px;
   position: fixed;
-  top: -2px;
   z-index: 3;
-}
-.bottom-spacer{
-  margin-bottom: 60px;
 }
 
 .spacer {
