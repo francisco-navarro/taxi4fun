@@ -3,8 +3,14 @@ h1 {
   padding-bottom: 50px;
 }
 
-h1 .new {
-  font-size: 1.5em;
+.section-links {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tarjeta {
+  text-align: initial;
+  margin: 10px;
+  width: 100%;
 }
 
 .title-card {
@@ -15,22 +21,12 @@ h1 .new {
 }
 
 .logo img{
-  width: 250px;
-}
-
-.lista-enlaces {
-  margin: 0 auto;
-  max-width: 350px;
-  text-align: left;
+  width: 1250px;
 }
 
 .welcome {
+  background-color: #eeeeee;
   position: relative;
   min-height: 100%;
   margin-bottom: 50px;
-}
-
-.content {
-  max-width: 600px;
-  margin: 0 auto;
 }

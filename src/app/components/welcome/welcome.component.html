@@ -9,16 +9,20 @@
     <h3>Here are some links to help you start: </h3>
   </md-card>
   
-  <md-card class="content">
-    <md-list class="lista-enlaces">
-      <md-list-item *ngFor="let link of links">
-        <md-icon md-list-icon color="primary">{{link.icon}}</md-icon>
-        <h4 md-line> 
-          <a routerLink="/{{link.uri}}">{{link.text}}</a>
-        </h4>
-        <p md-line>{{link.description}}</p>
-      </md-list-item>
-    </md-list>
-  </md-card>
+  <section class="section-links">
+    <md-grid-list class="content" cols="2" rowHeight="3:1">
+      <md-grid-tile *ngFor="let link of links">
+        <md-card routerLink="/{{link.uri}}" class="tarjeta">
+          <h4 md-card-title>
+            <md-icon md-list-icon color="primary">{{link.icon}}</md-icon>
+              <a routerLink="/{{link.uri}}">{{link.text}}</a>
+          </h4>
+          <md-content>
+            <p md-line>{{link.description}}</p>
+          </md-content>
+        </md-card>
+      </md-grid-tile>
+    </md-grid-list>
+  </section>
 </div>
 
