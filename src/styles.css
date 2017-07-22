@@ -36,6 +36,7 @@ input {
 
 .main-card {
   padding: 20px;
+  padding-top: 50px;
 }
 .md-dialog-container {
   position: absolute;
@@ -44,6 +45,10 @@ input {
 .md-dialog {
   max-width: 90%;
   max-height: 90%;
+}
+
+md-card {
+  margin: 15px;
 }
 
 /* fallback */

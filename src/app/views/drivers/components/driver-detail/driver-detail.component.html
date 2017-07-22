@@ -1,4 +1,18 @@
-<p>
-  {{driver.name}}
-  {{driver.available}}
-</p>
+<md-card (click)="fold()">
+  <md-card-header>
+    <md-card-title>
+      <md-icon>{{driver.available?'check circle':'work'}}</md-icon>
+      {{driver.name}}
+    </md-card-title>
+    <md-card-subtitle>{{driver.available}}</md-card-subtitle>
+  </md-card-header>
+  <md-card-content *ngIf="!folded">
+    <p>
+      Matrícula
+    </p>
+  </md-card-content>
+  <!--<md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+  </md-card-actions>-->
+</md-card>
