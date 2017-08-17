@@ -7,19 +7,16 @@ import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './views/welcome/welcome.component';
 import { ProfileComponent } from './views/profile/profile.component';
-import { InvoicesComponent } from './views/invoices/invoices.component';
+import { LoginComponent } from './views/login/login.component';
+import { WelcomeComponent } from './views/welcome/welcome.component';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
-import { DriversComponent } from './views/drivers/drivers.component';
-import { CarsComponent } from './views/cars/cars.component';
+
+import { ROUTES } from './app.routes';
 
 import { stubBackendProvider } from './stub-backend/stub-backend.provider';
 import { MockBackend } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
-import { DriversService } from "app/services/drivers.service";
-import { DriverDetailComponent } from './views/drivers/components/driver-detail/driver-detail.component';
-
 
 @NgModule({
     imports: [
@@ -30,51 +27,20 @@ import { DriverDetailComponent } from './views/drivers/components/driver-detail/
       MaterialModule,
       MdNativeDateModule,
       ReactiveFormsModule,
-      RouterModule.forRoot([
-        {
-          path: 'profile',
-          component: ProfileComponent
-        },
-        {
-          path: 'welcome',
-          component: WelcomeComponent
-        },
-        {
-          path: 'invoices',
-          component: InvoicesComponent
-        },
-        {
-          path: 'drivers',
-          component: DriversComponent
-        },
-        {
-          path: 'cars',
-          component: CarsComponent
-        },
-        {
-          path: '',
-          redirectTo: 'welcome',
-          pathMatch: 'full'
-        }
-      ]),
+      RouterModule.forRoot(ROUTES),
   ],
   declarations: [
     AppComponent,
-    WelcomeComponent,
     ProfileComponent,
-    InvoicesComponent,
+    WelcomeComponent,
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    DriversComponent,
-    CarsComponent,
-    DriverDetailComponent,
+    LoginComponent
   ],
   entryComponents: [ToolbarFeedbackDialog],
   providers: [
-    stubBackendProvider,
     MockBackend,
-    BaseRequestOptions,
-    DriversService
+    BaseRequestOptions
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
