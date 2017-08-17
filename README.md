@@ -1,6 +1,6 @@
 # Backoffice Taxi4fun
 
-Proyecto de gestión de backoffice iniciado con CLI.
+Proyecto de gestión de backoffice en angular 4.3
 
 ### master
 [![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)  
@@ -22,3 +22,9 @@ Proyecto de gestión de backoffice iniciado con CLI.
 ## Running end-to-end tests
 
 `ng e2e`
+
+Se han generado los scripts para desplegarlo en heroku.
+
+## Para desplegar en producción se ejecuta
+`ng build --aot -prod`
+`node server.js`
