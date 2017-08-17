@@ -14,10 +14,6 @@ import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/to
 
 import { ROUTES } from './app.routes';
 
-import { stubBackendProvider } from './stub-backend/stub-backend.provider';
-import { MockBackend } from '@angular/http/testing';
-import { BaseRequestOptions } from '@angular/http';
-
 @NgModule({
     imports: [
       BrowserModule,
@@ -39,8 +35,6 @@ import { BaseRequestOptions } from '@angular/http';
   ],
   entryComponents: [ToolbarFeedbackDialog],
   providers: [
-    MockBackend,
-    BaseRequestOptions
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
