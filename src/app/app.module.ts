@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { LoginComponent } from './views/login/login.component';
 import { WelcomeComponent } from './views/welcome/welcome.component';
+import { RegisterComponent } from './views/register/register.component';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 
 import { ROUTES } from './app.routes';
@@ -31,7 +32,8 @@ import { ROUTES } from './app.routes';
     WelcomeComponent,
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   entryComponents: [ToolbarFeedbackDialog],
   providers: [
