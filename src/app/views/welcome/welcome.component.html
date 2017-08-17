@@ -1,0 +1,28 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="welcome" style="text-align:center">
+  <md-card class="title-card">
+    <h1>
+      <img class="small-logo" src="../assets/logov2.png"/>
+      taxy4fun
+    </h1>
+    <h2>Welcome</h2>
+    <h3>Here are some links to help you start: </h3>
+  </md-card>
+  
+  <section class="section-links">
+    <md-grid-list class="content" cols="2" rowHeight="3:1">
+      <md-grid-tile *ngFor="let link of links">
+        <md-card routerLink="/{{link.uri}}" class="tarjeta">
+          <h4 md-card-title>
+            <md-icon md-list-icon color="primary">{{link.icon}}</md-icon>
+              <a routerLink="/{{link.uri}}">{{link.text}}</a>
+          </h4>
+          <md-content>
+            <p md-line>{{link.description}}</p>
+          </md-content>
+        </md-card>
+      </md-grid-tile>
+    </md-grid-list>
+  </section>
+</div>
+

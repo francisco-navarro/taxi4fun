@@ -3,49 +3,41 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
-
-import { AppRoutesModule  } from './app-routes';
-
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './components/welcome.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { InvoicesComponent } from './components/invoices/invoices.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { ProfileComponent } from './views/profile/profile.component';
+import { LoginComponent } from './views/login/login.component';
+import { WelcomeComponent } from './views/welcome/welcome.component';
+import { RegisterComponent } from './views/register/register.component';
+import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
+
+import { ROUTES } from './app.routes';
 
 @NgModule({
     imports: [
       BrowserModule,
       BrowserAnimationsModule,
       FormsModule,
+      HttpModule,
       MaterialModule,
       MdNativeDateModule,
       ReactiveFormsModule,
-      RouterModule.forRoot([
-        {
-          path: 'profile',
-          component: ProfileComponent
-        },
-        {
-          path: 'welcome',
-          component: WelcomeComponent
-        },
-        {
-          path: '',
-          redirectTo: 'welcome',
-          pathMatch: 'full'
-        }
-      ])
+      RouterModule.forRoot(ROUTES),
   ],
   declarations: [
     AppComponent,
-    WelcomeComponent,
     ProfileComponent,
-    InvoicesComponent,
+    WelcomeComponent,
     ToolbarComponent,
+    ToolbarFeedbackDialog,
+    LoginComponent,
+    RegisterComponent
   ],
-  providers: [],
+  entryComponents: [ToolbarFeedbackDialog],
+  providers: [
+  ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

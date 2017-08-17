@@ -9,6 +9,9 @@ import { OnInit } from '@angular/core';
 export class ProfileComponent implements OnInit {
 
   name = 'Jorge Nitales';
+  color;
+  checked;
+  disabled;
 
   ngOnInit(): void {
     console.log('ProfileComponent');

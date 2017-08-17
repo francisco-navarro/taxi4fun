@@ -1,10 +1,6 @@
 .fixed {
-  max-width: 1101px;
   position: fixed;
-  top: -2px;
-}
-.bottom-spacer{
-  margin-bottom: 60px;
+  z-index: 3;
 }
 
 .spacer {
@@ -15,7 +11,7 @@
   font-size: 0.75em;
 }
 .small-logo {
-  width: 32px;
+  width: 48px;
   padding: 0 12px;
 }
 
