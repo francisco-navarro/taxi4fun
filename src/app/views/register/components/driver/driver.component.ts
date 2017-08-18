@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriverComponent implements OnInit {
 
+  name: String = '';
+  lastName: String = '';
+  password = '';
+  password2 = '';
+  address = '';
+  city = '';
+  postalCode = '';
+  email = '';
+  phone = '';
+  driverLicense = '';
+  driverLicenseRenovation = '';
+
   constructor() { }
 
   ngOnInit() {

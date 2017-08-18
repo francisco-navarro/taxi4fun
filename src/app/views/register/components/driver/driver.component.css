@@ -1,0 +1,12 @@
+form {
+  display:flex;
+  flex-direction: column;
+}
+md-input-container {
+  padding: 10px 50px;
+}
+.end {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}

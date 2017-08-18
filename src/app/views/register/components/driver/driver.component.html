@@ -1,3 +1,51 @@
-<p>
-  driver works!
-</p>
+<form>
+  <p>
+    <md-input-container>
+      <input mdInput placeholder="Nombre" [(ngModel)]="name" name="name">
+    </md-input-container>
+    <md-input-container>
+      <input mdInput placeholder="Apellidos" [(ngModel)]="lastName" name="lastName">
+    </md-input-container>
+  </p>
+  <p>
+    <md-input-container>
+      <input mdInput placeholder="Password" [(ngModel)]="password" name="password">
+    </md-input-container> 
+    <md-input-container>
+      <input mdInput placeholder="Repetir password" [(ngModel)]="password2" name="password2">
+    </md-input-container> 
+  </p>
+  <p>
+    <md-input-container>
+      <input mdInput placeholder="Nombre" [(ngModel)]="address" name="address">
+    </md-input-container> 
+    <md-input-container>
+      <input mdInput placeholder="Nombre" [(ngModel)]="city" name="city">
+    </md-input-container>
+  </p>
+  <p>
+    <md-input-container>
+      <input mdInput placeholder="Nombre" [(ngModel)]="postalCode" name="postalCode">
+    </md-input-container> 
+    <md-input-container>
+      <input mdInput placeholder="Nombre" [(ngModel)]="email" name="email">
+    </md-input-container> 
+  </p>
+  <p>
+    <md-input-container>
+      <input mdInput placeholder="Nombre" [(ngModel)]="phone" name="phone">
+    </md-input-container>
+  </p>
+  <p>
+    <md-input-container>
+      <input mdInput placeholder="Permiso de conducción del reino de España" [(ngModel)]="driverLicense" name="driverLicense">
+    </md-input-container> 
+    <md-input-container>
+      <input mdInput placeholder="Caducidad" [(ngModel)]="driverLicenseRenovation" name="driverLicenseRenovation">
+    </md-input-container>
+  </p>
+  <p class="end">
+    <button md-raised-button color="primary">Siguiente</button>
+  </p>
+  
+</form>
