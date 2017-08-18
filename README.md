@@ -9,6 +9,7 @@ Proyecto de gestión de backoffice en angular 4.3
 
 ### codeclimate 
 [![Code Climate](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/gpa.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f)
+[![Test Coverage](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/coverage.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f/coverage)
 
 ## Development server
 
