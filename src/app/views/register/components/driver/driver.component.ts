@@ -9,15 +9,15 @@ export class DriverComponent implements OnInit {
 
   name: String = '';
   lastName: String = '';
-  password = '';
-  password2 = '';
-  address = '';
-  city = '';
-  postalCode = '';
-  email = '';
-  phone = '';
-  driverLicense = '';
-  driverLicenseRenovation = '';
+  password: String = '';
+  password2: String = '';
+  address: String = '';
+  city: String = '';
+  postalCode: String = '';
+  email: String = '';
+  phone: String = '';
+  driverLicense: String = '';
+  driverLicenseRenovation: String = '';
 
   constructor() { }
 
