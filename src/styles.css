@@ -1,14 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+@import './palette.css';*/
+@import './palette2.css';
+/* URL Paleta: https://material.io/color/#!/?view.left=0&view.right=0&primary.color=BF360C&secondary.color=616161 */
 
 
 a {
-  color: #2a3c93;
+  color: #bf360c;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4860d6;
+  color: #f9683a;
    text-decoration: underline;
 }
 
