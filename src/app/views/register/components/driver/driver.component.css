@@ -2,7 +2,13 @@ form {
   display:flex;
   flex-direction: column;
 }
-md-input-container {
+md-input-container, h2, h3 {
+  padding-left: 50px;
+}
+md-toolbar {
+  background-color: #f9683a;
+}
+h1, h2, h3 {
   padding: 10px 50px;
 }
 .end {
