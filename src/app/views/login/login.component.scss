@@ -8,6 +8,17 @@ md-card-content {
   display: flex;
   flex-direction: column;
 }
+md-card-header {
+  display: inline-flex;
+  img {
+    align-self: center;
+    width: 32px;
+    height: 32px;
+  }
+  h2 {
+    flex-basis: 50%;
+  }
+}
 
 md-input-container {
   padding: 10px 0;
