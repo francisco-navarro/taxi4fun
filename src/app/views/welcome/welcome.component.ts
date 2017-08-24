@@ -11,5 +11,10 @@ export class WelcomeComponent {
       text: 'Perfil',
       icon: 'assignment',
       description: 'Detalles del perfil'
+    },{
+      uri: 'call-taxi',
+      text: 'Viaje',
+      icon: 'settings_phone',
+      description: 'Pedir un taxi'
     }];
 }

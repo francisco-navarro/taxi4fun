@@ -3,8 +3,13 @@ import { ProfileComponent } from './views/profile/profile.component';
 import { LoginComponent } from './views/login/login.component';
 import { WelcomeComponent } from './views/welcome/welcome.component';
 import { RegisterComponent } from './views/register/register.component';
+import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
 
 export const ROUTES : Routes = [
+  {
+    path: 'call-taxi',
+    component: CallTaxiComponent
+  },
   {
     path: 'profile',
     component: ProfileComponent

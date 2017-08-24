@@ -17,6 +17,7 @@ import { ROUTES } from './app.routes';
 import { DriverComponent } from './views/register/components/driver/driver.component';
 import { UserComponent } from './views/register/components/user/user.component';
 import { PaymentComponent } from './views/register/components/payment/payment.component';
+import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
 
 @NgModule({
     imports: [
@@ -39,7 +40,8 @@ import { PaymentComponent } from './views/register/components/payment/payment.co
     RegisterComponent,
     DriverComponent,
     UserComponent,
-    PaymentComponent
+    PaymentComponent,
+    CallTaxiComponent
   ],
   entryComponents: [ToolbarFeedbackDialog],
   providers: [
