@@ -12,13 +12,16 @@ declare var google: any;
 export class CallTaxiComponent implements OnInit {
 
   lat: number = 40.5129046;
-  lng: number = -3.6753135;
+  lng: number = -3.6724659;
 
   apiKey: String = '';
 
   mapStyle = mapStyle;
 
   map;
+
+  cars = [
+    {lat: 40.5053907,lng: -3.6724659, status: 'call_made'}];
 
 
   constructor() { }
@@ -38,6 +41,22 @@ export class CallTaxiComponent implements OnInit {
       scrollwheel: false,
       styles: this.mapStyle
     });
+    this.cars.forEach(car => this.drawPoint(car));
+  }
+
+  drawPoint(car) {
+    // var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+    return new google.maps.Marker({
+        position: {lat: car.lat,lng: car.lng},
+        map: this.map,
+        animation: google.maps.Animation.DROP,
+        // icon: image
+        icon: {
+          path: google.maps.SymbolPath.BACKWARD_OPEN_ARROW,
+          strokeColor: '#ed6e65',
+          scale: 2
+        }
+      });
   }
 
 }
