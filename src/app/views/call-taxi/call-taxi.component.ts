@@ -21,8 +21,9 @@ export class CallTaxiComponent implements OnInit {
   map;
 
   cars = [
-    {lat: 40.5053907,lng: -3.6724659, status: 'call_made'}];
-
+    {lat: 40.5053907,lng: -3.6724659, status: 'call_made'},
+    {lat: 40.5140601,lng: -3.6817367, status: 'call_made'}
+  ];
 
   constructor() { }
 
