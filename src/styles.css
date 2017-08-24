@@ -23,6 +23,17 @@ html, body {
     font-family: 'Raleway', sans-serif;
 }
 
+.color-primary {
+  color: #bf360c;
+  font-weight: 800;
+}
+
+.title-primary {
+  color: #bf360c;
+  border-bottom: 1px solid #bf360c;
+  padding-bottom: 10px;
+}
+
 #mainContainer {
     position: absolute;
     top: 0;
@@ -31,7 +42,6 @@ html, body {
     right: 0;
     overflow: auto;
 }
-
 
 input {
   min-width: 250px;

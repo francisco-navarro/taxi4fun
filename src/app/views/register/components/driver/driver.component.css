@@ -3,13 +3,13 @@ form {
   flex-direction: column;
 }
 md-input-container, h2, h3 {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 md-toolbar {
   background-color: #f9683a;
 }
 h1, h2, h3 {
-  padding: 10px 50px;
+  padding-top: 20px;
 }
 .end {
   padding: 10px;
