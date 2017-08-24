@@ -1,11 +1,12 @@
 <div class="main-card">
   <md-card>
-    <h2 md-card-header>Login</h2>
+    <h2 md-card-header class="title-primary">Login</h2>
     <md-card-content>
 
       <p><strong>Introduce los datos de acceso:</strong></p>
 
       <md-input-container>
+       
         <input mdInput placeholder="Correo electronico" [formControl]="usernameFormControl">
         <md-error *ngIf="usernameFormControl.hasError('required')">
           Usuario es <strong>obligatorio</strong>

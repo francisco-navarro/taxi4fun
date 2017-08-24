@@ -14,6 +14,11 @@ import { RegisterComponent } from './views/register/register.component';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 
 import { ROUTES } from './app.routes';
+import { DriverComponent } from './views/register/components/driver/driver.component';
+import { UserComponent } from './views/register/components/user/user.component';
+import { PaymentComponent } from './views/register/components/payment/payment.component';
+import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
+import { CarsComponent } from './views/cars/cars.component';
 
 @NgModule({
     imports: [
@@ -33,7 +38,12 @@ import { ROUTES } from './app.routes';
     ToolbarComponent,
     ToolbarFeedbackDialog,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DriverComponent,
+    UserComponent,
+    PaymentComponent,
+    CallTaxiComponent,
+    CarsComponent
   ],
   entryComponents: [ToolbarFeedbackDialog],
   providers: [

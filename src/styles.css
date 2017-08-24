@@ -1,23 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+@import './palette.css';*/
+@import './palette2.css';
+/* URL Paleta: https://material.io/color/#!/?view.left=0&view.right=0&primary.color=BF360C&secondary.color=616161 */
 
 
 a {
-  color: #2a3c93;
+  color: #bf360c;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4860d6;
+  color: #f9683a;
    text-decoration: underline;
 }
 
 html, body {
     height: 100%;
     overflow: hidden;
-    background-color: #FAFAFA;
+    background-color: #e0e0e0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+}
+
+.color-primary {
+  color: #bf360c;
+  font-weight: 800;
+}
+
+.title-primary {
+  color: #bf360c;
+  border-bottom: 1px solid #bf360c;
+  padding-bottom: 10px;
 }
 
 #mainContainer {
@@ -29,7 +43,6 @@ html, body {
     overflow: auto;
 }
 
-
 input {
   min-width: 250px;
 }
@@ -37,6 +50,9 @@ input {
 .main-card {
   padding: 20px;
   padding-top: 50px;
+}
+.main-card > h2 {
+  padding : 20px;
 }
 .md-dialog-container {
   position: absolute;

@@ -1,8 +1,12 @@
+import { FormsModule } from '@angular/forms';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MaterialModule } from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RegisterComponent } from './register.component';
+import { UserComponent } from './components/user/user.component';
+import { DriverComponent } from './components/driver/driver.component';
 
 describe('RegisterComponent', () => {
   let component: RegisterComponent;
@@ -10,8 +14,9 @@ describe('RegisterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegisterComponent ],
-      imports: [ MaterialModule, BrowserAnimationsModule ]
+      declarations: [ RegisterComponent, UserComponent, DriverComponent ],
+      imports: [ FormsModule, MaterialModule, BrowserAnimationsModule ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   }));

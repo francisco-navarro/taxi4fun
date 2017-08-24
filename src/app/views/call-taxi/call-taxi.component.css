@@ -1,0 +1,8 @@
+h1, .profile-card {
+  margin: 50px;
+}
+#map {
+  height: 750px;
+  display : inline-flex!important;
+  width: 100%;
+}
