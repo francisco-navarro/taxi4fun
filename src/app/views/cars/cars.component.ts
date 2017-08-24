@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsComponent implements OnInit {
 
+  cars = [
+    {name: 'Coche 1', license: 'ER-12320'},
+    {name: 'Coche 2', license: 'YT-42320'},
+    {name: 'Coche 3', license: 'PL-12320'}
+  ];
+
   constructor() { }
 
   ngOnInit() {

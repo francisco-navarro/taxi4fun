@@ -16,5 +16,10 @@ export class WelcomeComponent {
       text: 'Viaje',
       icon: 'settings_phone',
       description: 'Pedir un taxi'
+    },{
+      uri: 'cars',
+      text: 'Coches',
+      icon: 'assignment_return',
+      description: 'Gestionar mis coches'
     }];
 }

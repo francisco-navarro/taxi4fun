@@ -51,6 +51,9 @@ input {
   padding: 20px;
   padding-top: 50px;
 }
+.main-card > h2 {
+  padding : 20px;
+}
 .md-dialog-container {
   position: absolute;
 }
