@@ -5,7 +5,6 @@
 
       <p><strong>Introduce los datos de acceso:</strong></p>
 
-       <md-icon>email</md-icon>
       <md-input-container>
        
         <input mdInput placeholder="Correo electronico" [formControl]="usernameFormControl">
@@ -18,7 +17,6 @@
        </md-input-container> 
 
       <md-input-container>
-        <md-icon>vpn_key</md-icon>
         <input mdInput placeholder="Password" [formControl]="passwordFormControl">
         <md-error *ngIf="passwordFormControl.hasError('required')">
           Password es <strong>obligatorio</strong>

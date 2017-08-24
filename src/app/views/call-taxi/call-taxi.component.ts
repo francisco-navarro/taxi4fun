@@ -11,8 +11,8 @@ declare var google: any;
 })
 export class CallTaxiComponent implements OnInit {
 
-  lat: number = 40.5129046;
-  lng: number = -3.6724659;
+  lat: number = 40.4070466;
+  lng: number = -3.7000443;
 
   apiKey: String = '';
 
