@@ -27,13 +27,22 @@ before_install:
 
 before_script:
   - npm install -g @angular/cli
+  - npm install -g codeclimate-test-reporter
+
+after_script:
+  - ng test --watch=false --code-coverage
+  - codeclimate-test-reporter < coverage/lcov.info
 
 env:
   CHROME_BIN=chromium-browser
   DISPLAY=:99.0
+  CODECLIMATE_REPO_TOKEN=49e9ae62c16b1059f66538c931ff98dd08b23843ccf915106c20bd63b7967db7
 
 notifications:
   email:
     recipients:
     on_success: change
     on_failure: always
+  slack:
+    rooms:
+      - springuers:87OpNvMaXntND57GTmC0htJr#travis
