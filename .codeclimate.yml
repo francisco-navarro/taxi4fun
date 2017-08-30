@@ -1,18 +1,15 @@
-tslint:
-  enabled: true
-  channel: beta
-  config: tslint.json
+
 engines:
   tslint:
     enabled: true
-  eslint:
-    enabled: true
-  csslint:
-    enabled: false
+    channel: beta
+    config: tslint.json
 ratings:
   paths:
-  - "**.ts"
+    - "**.ts"
 exclude_paths:
-- node_modules/**/*
-- typings/**/*
-- src/**/*.css
+  - bin
+  - node_modules
+  - typings
+  - coverage
+  - dist
