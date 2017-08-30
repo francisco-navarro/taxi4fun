@@ -37,3 +37,6 @@ notifications:
     recipients:
     on_success: change
     on_failure: always
+  slack:
+    rooms:
+      - springuers:87OpNvMaXntND57GTmC0htJr#travis
