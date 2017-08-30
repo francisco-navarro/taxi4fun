@@ -1,5 +1,11 @@
-JavaScript: true
-
+engines:
+  rubocop:
+    enabled: true
+  eslint:
+    enabled: false
+  csslint:
+    enabled: false
+    
 exclude_paths:
 - "tests/"
 - "spec/"
