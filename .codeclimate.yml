@@ -1,12 +1,14 @@
 engines:
-  rubocop:
+  tslint:
     enabled: true
   eslint:
-    enabled: false
+    enabled: true
   csslint:
     enabled: false
-    
+ratings:
+  paths:
+  - "**.ts"
 exclude_paths:
-- "tests/"
-- "spec/"
-- "**/*.css"
+- node_modules/**/*
+- typings/**/*
+- **/*.css
