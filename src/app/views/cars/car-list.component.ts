@@ -22,8 +22,14 @@ export class CarListComponent implements OnInit {
   }
 
   showModal(car) {
-    this.dialog.open(CarComponent, {
+    const modal = this.dialog.open(CarComponent, {
       data: car
+    });
+    modal.componentInstance.onSave.subscribe($e => {
+      car.license = $e.license;
+      car.name = $e.name;
+      car.type = $e.type;
+      modal.close();
     });
   }
 
