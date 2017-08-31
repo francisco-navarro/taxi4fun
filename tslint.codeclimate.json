@@ -8,6 +8,7 @@
       true,
       "check-space"
     ],
+    "comma-dangle": false,
     "curly": true,
     "eofline": true,
     "forin": true,
