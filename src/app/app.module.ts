@@ -18,7 +18,8 @@ import { DriverComponent } from './views/register/components/driver/driver.compo
 import { UserComponent } from './views/register/components/user/user.component';
 import { PaymentComponent } from './views/register/components/payment/payment.component';
 import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
-import { CarsComponent } from './views/cars/cars.component';
+import { CarListComponent } from './views/cars/car-list.component';
+import { CarComponent } from './views/cars/components/car/car.component';
 
 @NgModule({
     imports: [
@@ -43,9 +44,12 @@ import { CarsComponent } from './views/cars/cars.component';
     UserComponent,
     PaymentComponent,
     CallTaxiComponent,
-    CarsComponent
+    CarListComponent,
+    CarComponent
   ],
-  entryComponents: [ToolbarFeedbackDialog],
+  entryComponents: [
+    CarComponent
+  ],
   providers: [
   ],
   bootstrap: [AppComponent],
