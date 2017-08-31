@@ -8,7 +8,6 @@
       true,
       "check-space"
     ],
-    "comma-dangle": false,
     "curly": true,
     "eofline": true,
     "forin": true,
@@ -81,6 +80,7 @@
     "semicolon": [
       "always"
     ],
+    "trailing-comma": false,
     "triple-equals": [
       true,
       "allow-null-check"
