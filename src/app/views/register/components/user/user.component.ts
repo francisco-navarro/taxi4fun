@@ -16,6 +16,9 @@ export class UserComponent implements OnInit {
   postalCode: String = '';
   email: String = '';
   phone: String = '';
+  driverLicense: String = '';
+  driverLicenseRenovation: String = '';
+  state;
 
   constructor() { }
 

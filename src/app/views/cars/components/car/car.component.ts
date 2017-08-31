@@ -25,7 +25,7 @@ export class CarComponent implements OnInit {
   ngOnInit() {
   }
 
-  save(car) {
+  save() {
     this.onSave.emit({
       license: this.license,
       name: this.name,
