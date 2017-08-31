@@ -80,6 +80,7 @@
     "semicolon": [
       "always"
     ],
+    "trailing-comma": false,
     "triple-equals": [
       true,
       "allow-null-check"
