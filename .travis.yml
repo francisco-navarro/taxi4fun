@@ -39,10 +39,6 @@ env:
   CODECLIMATE_REPO_TOKEN=49e9ae62c16b1059f66538c931ff98dd08b23843ccf915106c20bd63b7967db7
 
 notifications:
-  email:
-    recipients:
-    on_success: change
-    on_failure: always
   slack:
     rooms:
       - springuers:87OpNvMaXntND57GTmC0htJr#travis
