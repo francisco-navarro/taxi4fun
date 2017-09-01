@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "6.9"
+  - "7.10"
 
 branches:
   only:
@@ -45,4 +45,4 @@ notifications:
     on_failure: always
   slack:
     rooms:
-      - springuers:87OpNvMaXntND57GTmC0htJr#travis
+      - springuers:87OpNvMaXntND57GTmC0htJr#frontend
