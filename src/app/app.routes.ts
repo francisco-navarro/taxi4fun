@@ -4,12 +4,12 @@ import { LoginComponent } from './views/login/login.component';
 import { WelcomeComponent } from './views/welcome/welcome.component';
 import { RegisterComponent } from './views/register/register.component';
 import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
-import { CarListComponent } from './views/cars/car-list.component';
+import { CarDashboardComponent } from './views/cars/car-dashboard.component';
 
 export const ROUTES : Routes = [
   {
     path: 'cars',
-    component: CarListComponent
+    component: CarDashboardComponent
   },
   {
     path: 'call-taxi',
