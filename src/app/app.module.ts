@@ -20,6 +20,7 @@ import { PaymentComponent } from './views/register/components/payment/payment.co
 import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
 import { CarDashboardComponent } from './views/cars/car-dashboard.component';
 import { CarComponent } from './views/cars/components/car/car.component';
+import { StatsComponent } from './views/cars/components/stats/stats.component';
 
 @NgModule({
     imports: [
@@ -45,7 +46,8 @@ import { CarComponent } from './views/cars/components/car/car.component';
     PaymentComponent,
     CallTaxiComponent,
     CarDashboardComponent,
-    CarComponent
+    CarComponent,
+    StatsComponent
   ],
   entryComponents: [
     CarComponent
