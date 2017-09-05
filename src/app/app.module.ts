@@ -18,8 +18,9 @@ import { DriverComponent } from './views/register/components/driver/driver.compo
 import { UserComponent } from './views/register/components/user/user.component';
 import { PaymentComponent } from './views/register/components/payment/payment.component';
 import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
-import { CarListComponent } from './views/cars/car-list.component';
+import { CarDashboardComponent } from './views/cars/car-dashboard.component';
 import { CarComponent } from './views/cars/components/car/car.component';
+import { StatsComponent } from './views/cars/components/stats/stats.component';
 
 @NgModule({
     imports: [
@@ -44,8 +45,9 @@ import { CarComponent } from './views/cars/components/car/car.component';
     UserComponent,
     PaymentComponent,
     CallTaxiComponent,
-    CarListComponent,
-    CarComponent
+    CarDashboardComponent,
+    CarComponent,
+    StatsComponent
   ],
   entryComponents: [
     CarComponent

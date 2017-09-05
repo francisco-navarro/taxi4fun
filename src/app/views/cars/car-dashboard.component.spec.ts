@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarListComponent } from './car-list.component';
+import { CarDashboardComponent } from './car-dashboard.component';
 
-describe('CarListComponent', () => {
+describe('CarDashboardComponent', () => {
   // let component: CarsComponent;
   // let fixture: ComponentFixture<CarsComponent>;
 

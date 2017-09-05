@@ -5,10 +5,10 @@ import { CarComponent } from './components/car/car.component';
 
 @Component({
   selector: 'y4f-cars',
-  templateUrl: './car-list.component.html',
-  styleUrls: ['./car-list.component.scss']
+  templateUrl: './car-dashboard.component.html',
+  styleUrls: ['./car-dashboard.component.scss']
 })
-export class CarListComponent implements OnInit {
+export class CarDashboardComponent implements OnInit {
 
   cars = [
     {name: 'Coche 1', license: 'ER-12320', type: 'sedan'},
