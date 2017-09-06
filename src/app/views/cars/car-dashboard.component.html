@@ -1,9 +1,11 @@
 <div class="main-card">
-  <h2>Coches</h2>
 
-  <y4f-car-list [cars]="cars" (carClicked)="showModal($event)" (addNew)="showNewModal()">
-  </y4f-car-list>
+  <h2 class="inline-block">Coches</h2>
 
-  <y4f-stats></y4f-stats>
+  <div class="flex">
+    <y4f-car-list [cars]="cars" (carClicked)="showModal($event)" (addNew)="showNewModal()">
+    </y4f-car-list>
+    <y4f-stats class="flex-column"></y4f-stats>
+  </div>
 
 </div>

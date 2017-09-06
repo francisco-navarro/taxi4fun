@@ -1,3 +1,9 @@
 .actions-div {
   padding: 0 20px;
 }
+.md-card {
+  display: inherit;
+}
+y4f-car-list {
+  flex-grow: 2;
+}
