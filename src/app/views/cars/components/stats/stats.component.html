@@ -13,5 +13,15 @@
   </md-card>
 </div>
 <md-card>
-  <img src="http://cdn-metalogo.pearltrees.com/57/c7/57c7b103ab1207659c8a074d490242fa-pearlsquare.jpg?v=2">
+  <div style="min-height: 250px;min-width: 350px;">
+    <canvas
+        baseChart
+        [chartType]="'line'"
+        [datasets]="chartData"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartClick)="onChartClick($event)">
+    </canvas>
+  </div>
 </md-card>

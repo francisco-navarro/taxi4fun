@@ -5,6 +5,7 @@ import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './views/profile/profile.component';
@@ -32,6 +33,7 @@ import { ListComponent } from './views/cars/components/list/list.component';
       MaterialModule,
       MdNativeDateModule,
       ReactiveFormsModule,
+      ChartsModule,
       RouterModule.forRoot(ROUTES),
   ],
   declarations: [
