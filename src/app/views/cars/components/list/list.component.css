@@ -1,0 +1,8 @@
+md-list-item:hover {
+  background-color: rgba(50, 50, 50, 0.05);
+  cursor: pointer;
+}
+.mat-list-item .mat-list-icon {
+  height: 40px;
+  width: 40px;
+}

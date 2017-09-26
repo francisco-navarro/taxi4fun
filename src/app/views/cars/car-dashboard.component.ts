@@ -6,7 +6,7 @@ import { CarComponent } from './components/car/car.component';
 @Component({
   selector: 'y4f-cars',
   templateUrl: './car-dashboard.component.html',
-  styleUrls: ['./car-dashboard.component.scss']
+  styleUrls: ['./car-dashboard.component.css']
 })
 export class CarDashboardComponent implements OnInit {
 

@@ -5,6 +5,7 @@ import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './views/profile/profile.component';
@@ -21,6 +22,7 @@ import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
 import { CarDashboardComponent } from './views/cars/car-dashboard.component';
 import { CarComponent } from './views/cars/components/car/car.component';
 import { StatsComponent } from './views/cars/components/stats/stats.component';
+import { ListComponent } from './views/cars/components/list/list.component';
 
 @NgModule({
     imports: [
@@ -31,6 +33,7 @@ import { StatsComponent } from './views/cars/components/stats/stats.component';
       MaterialModule,
       MdNativeDateModule,
       ReactiveFormsModule,
+      ChartsModule,
       RouterModule.forRoot(ROUTES),
   ],
   declarations: [
@@ -47,7 +50,8 @@ import { StatsComponent } from './views/cars/components/stats/stats.component';
     CallTaxiComponent,
     CarDashboardComponent,
     CarComponent,
-    StatsComponent
+    StatsComponent,
+    ListComponent
   ],
   entryComponents: [
     CarComponent

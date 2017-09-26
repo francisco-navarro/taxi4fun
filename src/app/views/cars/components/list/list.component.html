@@ -1,0 +1,19 @@
+<md-card>
+  <h2 class="title-primary">
+    <img class="title-icon" src="../assets/car-key.svg"/>
+    &nbsp;<span>Coches disponibles para el conductor</span>
+  </h2>
+  <md-list>
+    <md-list-item *ngFor="let car of cars" (click)="clicked(car)">
+      <img md-list-icon  src="../assets/cars/{{car.type}}.svg"/>
+      <h4 md-line role="link">{{car.name}}</h4>
+      <p md-line>{{car.license}} </p>
+    </md-list-item>
+  </md-list>
+  
+  <div class="actions-div" align="end">
+    <button md-fab color="primary">
+      <md-icon class="md-24" (click)="clickNew()">add</md-icon>
+    </button>
+  </div>
+</md-card>
