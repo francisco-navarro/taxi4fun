@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 import { StatsComponent } from './stats.component';
 
@@ -11,7 +12,7 @@ describe('StatsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ StatsComponent ],
-      imports: [ MaterialModule, BrowserAnimationsModule ]
+      imports: [ MaterialModule, BrowserAnimationsModule, ChartsModule ]
     })
     .compileComponents();
   }));
