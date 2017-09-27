@@ -8,21 +8,9 @@ import { RouterModule }   from '@angular/router';
 import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './views/profile/profile.component';
-import { LoginComponent } from './views/login/login.component';
-import { WelcomeComponent } from './views/welcome/welcome.component';
-import { RegisterComponent } from './views/register/register.component';
-import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 
 import { ROUTES } from './app.routes';
-import { DriverComponent } from './views/register/components/driver/driver.component';
-import { UserComponent } from './views/register/components/user/user.component';
-import { PaymentComponent } from './views/register/components/payment/payment.component';
-import { CallTaxiComponent } from './views/call-taxi/call-taxi.component';
-import { CarDashboardComponent } from './views/cars/car-dashboard.component';
-import { CarComponent } from './views/cars/components/car/car.component';
-import { StatsComponent } from './views/cars/components/stats/stats.component';
-import { ListComponent } from './views/cars/components/list/list.component';
+import { WelcomeComponent } from './views/welcome/welcome.component';
 
 @NgModule({
     imports: [
@@ -38,23 +26,7 @@ import { ListComponent } from './views/cars/components/list/list.component';
   ],
   declarations: [
     AppComponent,
-    ProfileComponent,
-    WelcomeComponent,
-    ToolbarComponent,
-    ToolbarFeedbackDialog,
-    LoginComponent,
-    RegisterComponent,
-    DriverComponent,
-    UserComponent,
-    PaymentComponent,
-    CallTaxiComponent,
-    CarDashboardComponent,
-    CarComponent,
-    StatsComponent,
-    ListComponent
-  ],
-  entryComponents: [
-    CarComponent
+    WelcomeComponent
   ],
   providers: [
   ],
