@@ -5,7 +5,7 @@ import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
-import { ChartsModule } from 'ng2-charts';
+// import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 
@@ -21,7 +21,7 @@ import { WelcomeComponent } from './views/welcome/welcome.component';
       MaterialModule,
       MdNativeDateModule,
       ReactiveFormsModule,
-      ChartsModule,
+      // ChartsModule,
       RouterModule.forRoot(ROUTES),
   ],
   declarations: [
