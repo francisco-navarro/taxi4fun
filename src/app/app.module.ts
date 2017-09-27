@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule, MdNativeDateModule } from '@angular/material';
+import { MdButtonModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
@@ -18,8 +18,6 @@ import { WelcomeComponent } from './views/welcome/welcome.component';
       BrowserAnimationsModule,
       FormsModule,
       HttpModule,
-      MaterialModule,
-      MdNativeDateModule,
       ReactiveFormsModule,
       // ChartsModule,
       RouterModule.forRoot(ROUTES),
