@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
-import { ChartsModule } from 'ng2-charts';
-import { MaterialModule } from '@angular/material';
+// import { ChartsModule } from 'ng2-charts';
+// import { MaterialModule } from '@angular/material';
 
 import { CoreModule } from 'app/core/core.module';
 import { AppComponent } from './app.component';
@@ -12,15 +12,14 @@ import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
 import { WelcomeComponent } from './views/welcome/welcome.component';
 
+
 @NgModule({
     imports: [
-      BrowserModule,
       CoreModule,
+      BrowserModule,
       FormsModule,
       HttpModule,
       ReactiveFormsModule,
-      ChartsModule,
-      MaterialModule,
       RouterModule.forRoot(ROUTES),
   ],
   declarations: [
