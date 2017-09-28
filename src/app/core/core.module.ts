@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
 import {
@@ -33,7 +35,13 @@ import {
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MaterialModule
+  ],
   exports: [
+    BrowserAnimationsModule,
     MaterialModule,
     MdAutocompleteModule,
     MdButtonToggleModule,
@@ -61,10 +69,11 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     MdSortModule,
     MdTableModule,
     MdTabsModule,
-    MdTooltipModule
+    MdTooltipModule,
+    ToolbarComponent
   ],
   declarations: [
-    ToolbarComponent    
+    ToolbarComponent  
   ]
 })
 export class CoreModule {};
