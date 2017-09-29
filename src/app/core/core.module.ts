@@ -32,7 +32,7 @@ import {
   MdTabsModule,
   MdTooltipModule,
 } from '@angular/material';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 
 @NgModule({
   imports: [
@@ -70,10 +70,12 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     MdTableModule,
     MdTabsModule,
     MdTooltipModule,
-    ToolbarComponent
+    ToolbarComponent,
+    ToolbarFeedbackDialog
   ],
   declarations: [
-    ToolbarComponent  
+    ToolbarComponent,
+    ToolbarFeedbackDialog 
   ]
 })
 export class CoreModule {};
