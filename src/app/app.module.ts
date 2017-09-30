@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 // import { ChartsModule } from 'ng2-charts';
-// import { MaterialModule } from '@angular/material';
 
 import { CoreModule } from 'app/core/core.module';
 import { AppComponent } from './app.component';

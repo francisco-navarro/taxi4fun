@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule } from '@angular/material';
 
 import { WelcomeComponent } from './welcome.component';
+import { RouterLinkStubDirective } from 'app/core/testing/router/router-stubs';
 
 describe('WelcomeComponent', () => {
   let component: WelcomeComponent;
@@ -10,7 +11,10 @@ describe('WelcomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule ],
-      declarations: [ WelcomeComponent ]
+      declarations: [ 
+        WelcomeComponent,
+        RouterLinkStubDirective
+      ]
     })
     .compileComponents();
   }));
