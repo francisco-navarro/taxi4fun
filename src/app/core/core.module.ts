@@ -39,12 +39,14 @@ import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/to
 import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
 import { LoginComponent } from './views/login/login.component';
 import { AuthService } from 'app/core/services/auth.service';
+import { LoginService } from 'app/core/services/login.service';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule,
+    HttpModule,
     MaterialModule
   ],
   exports: [
@@ -83,7 +85,8 @@ import { AuthService } from 'app/core/services/auth.service';
     WelcomeComponent
   ],
   providers: [
-    AuthService
+    AuthService,
+    LoginService
   ],
   declarations: [
     ToolbarComponent,

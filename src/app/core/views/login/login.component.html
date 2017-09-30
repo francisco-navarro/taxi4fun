@@ -1,4 +1,34 @@
-<p>
-  login works!
-</p>
-<h2>login</h2>
+<div class="main-card">
+    <md-card>
+      <h2 md-card-header class="title-primary">Login</h2>
+      <md-card-content>
+  
+        <p><strong>Introduce los datos de acceso:</strong></p>
+  
+        <md-input-container>
+         
+          <input mdInput placeholder="Correo electronico">
+          <md-error *ngIf="usernameFormControl.hasError('required')">
+            Usuario es <strong>obligatorio</strong>
+          </md-error>
+          <md-error *ngIf="usernameFormControl.hasError('pattern')">
+            Por favor, introduzca un correo correcto
+          </md-error>
+         </md-input-container> 
+  
+        <md-input-container>
+          <input mdInput placeholder="Password">
+          <md-error *ngIf="passwordFormControl.hasError('required')">
+            Password es <strong>obligatorio</strong>
+          </md-error>
+        </md-input-container>
+  
+        <md-card-actions align="end">
+          <button md-button routerLink="/register">Registro</button>
+          <button md-raised-button color="primary" (click)="sendLogin()" >Acceder</button>
+        </md-card-actions>
+  
+      </md-card-content>
+    </md-card>
+  </div>
+  

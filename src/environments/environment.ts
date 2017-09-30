@@ -6,5 +6,5 @@
 export const environment = {
   production: false,
   stubBackend: true,
-  endpoint: 'localhost:4001/api/'
+  endpoint: 'localhost:3000/v1/'
 };
