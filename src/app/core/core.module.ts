@@ -80,7 +80,7 @@ import { AuthService } from 'app/core/services/auth.service';
     //Componentes
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    WelcomeComponent,
+    WelcomeComponent
   ],
   providers: [
     AuthService
