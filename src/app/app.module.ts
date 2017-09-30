@@ -7,6 +7,7 @@ import { CoreModule } from 'app/core/core.module';
 import { AppComponent } from './app.component';
 
 import { ROUTES } from './app.routes';
+import { AuthService } from 'app/core/services/auth.service';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ROUTES } from './app.routes';
     AppComponent
   ],
   providers: [
+    //Services
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

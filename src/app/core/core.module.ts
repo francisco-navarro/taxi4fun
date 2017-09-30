@@ -37,6 +37,8 @@ import {
 } from '@angular/material';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
+import { LoginComponent } from './views/login/login.component';
+import { AuthService } from 'app/core/services/auth.service';
 
 @NgModule({
   imports: [
@@ -78,12 +80,16 @@ import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
     //Componentes
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    WelcomeComponent
+    WelcomeComponent,
+  ],
+  providers: [
+    AuthService
   ],
   declarations: [
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    WelcomeComponent
+    WelcomeComponent,
+    LoginComponent
   ]
 })
 export class CoreModule {};
