@@ -4,12 +4,14 @@ h1 {
 }
 
 .section-links {
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
 }
 .tarjeta {
+  margin: 10px;
   text-align: initial;
-  width: 100%;
+  min-width: 240px;
 }
 
 .title-card {

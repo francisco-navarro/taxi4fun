@@ -1,8 +1,11 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { RouterModule }   from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
+// Lo dejamos preparado para la proxima version de material
 import {
   MdAutocompleteModule,
   MdButtonToggleModule,
@@ -33,11 +36,13 @@ import {
   MdTooltipModule,
 } from '@angular/material';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
+import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    RouterModule,
     MaterialModule
   ],
   exports: [
@@ -70,12 +75,15 @@ import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/to
     MdTableModule,
     MdTabsModule,
     MdTooltipModule,
+    //Componentes
     ToolbarComponent,
-    ToolbarFeedbackDialog
+    ToolbarFeedbackDialog,
+    WelcomeComponent
   ],
   declarations: [
     ToolbarComponent,
-    ToolbarFeedbackDialog 
+    ToolbarFeedbackDialog,
+    WelcomeComponent
   ]
 })
 export class CoreModule {};

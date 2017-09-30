@@ -21,7 +21,6 @@ export class ToolbarComponent {
   <md-dialog-content>Are you disgusted and ANGRY to be human in today's world ?</md-dialog-content>
   <md-dialog-actions>
     <button md-button md-dialog-close>No</button>
-    <!-- Can optionally provide a result for the closing dialog. -->
     <button md-button [md-dialog-close]="true">Yes</button>
   </md-dialog-actions>
 `

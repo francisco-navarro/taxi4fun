@@ -99,6 +99,11 @@ input {
   flex-grow: 1;
 }
 
-.flex.nowrap{
+.flex.nowrap, .flex-row.nowrap, .flex-column.nowrap{
+  -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
+}
+.flex.wrap, .flex-row.wrap, .flex-column.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }

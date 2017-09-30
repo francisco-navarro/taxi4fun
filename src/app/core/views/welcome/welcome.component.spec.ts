@@ -28,4 +28,8 @@ describe('WelcomeComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have links', () => {
+    expect(component.links.length).toBeGreaterThan(0);
+  });
 });
