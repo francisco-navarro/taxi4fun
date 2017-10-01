@@ -12,7 +12,7 @@ export class LoginService {
   constructor(private http: Http) { }
 
   send(): Observable<Boolean> {
-    return this.http.post( environment.endpoint + 'sessions/', {})
+    return this.http.post( environment.endpoint + 'v1/sessions', {})
       .map(response => response.status === 200);
   }
 
