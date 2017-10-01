@@ -1,15 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
 
 import { LoginComponent } from './login.component';
+import { LoginService } from 'app/core/services/login.service';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
+  let loginResponse = true;
 
   beforeEach(async(() => {
+    let loginServiceStub = {
+      send: () => Observable.of(loginResponse)
+    };
+
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
+      imports: [ MaterialModule, BrowserAnimationsModule ],
+      providers: [ {provide: LoginService, useValue: loginServiceStub } ],
       declarations: [ LoginComponent ]
     })
     .compileComponents();

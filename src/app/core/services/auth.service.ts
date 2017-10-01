@@ -12,11 +12,10 @@ export class AuthService  implements CanActivate {
   }
 
   canActivate() {
-    // return Observable.of(this.logged);
     if(!this.logged) {
       this.router.navigate(['/login']);
       return false;
     }
-    return this.logged;
+    return  Observable.of(this.logged);
   }
 }
