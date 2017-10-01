@@ -11,6 +11,12 @@ export class AuthService  implements CanActivate {
     this.logged = false;
   }
 
+  changeStatus(status:boolean) {
+    // TODO: guardar en local storage
+    this.logged = status;
+    return this.logged;
+  }
+
   canActivate() {
     if(!this.logged) {
       this.router.navigate(['/login']);
