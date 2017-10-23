@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MaterialModule } from '@angular/material';
 
 import { ToolbarComponent } from './toolbar.component';
-import { RouterLinkStubDirective } from 'app/core/testing/router/router-stubs';
+import { RouterLinkStubDirective } from 'app/core/testing/router/router.stubs';
 
 describe('ToolbarComponent', () => {
   let component: ToolbarComponent;
