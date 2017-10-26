@@ -19,7 +19,7 @@
   font-size: 1.5em;
 }
 
-md-toolbar {
+mat-toolbar {
   position: absolute;
   top: 0;
 }

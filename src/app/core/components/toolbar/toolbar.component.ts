@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MdDialog } from '@angular/material';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'y4f-toolbar',
@@ -7,7 +7,7 @@ import { MdDialog } from '@angular/material';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent { 
-  constructor(public dialog: MdDialog) {}
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     this.dialog.open(ToolbarFeedbackDialog);
@@ -17,12 +17,12 @@ export class ToolbarComponent {
 @Component({
   selector: 'toolbar-feedback-dialog',
   template: `
-  <h2 md-dialog-title>Leave us a feedback</h2>
-  <md-dialog-content>Are you disgusted and ANGRY to be human in today's world ?</md-dialog-content>
-  <md-dialog-actions>
-    <button md-button md-dialog-close>No</button>
-    <button md-button [md-dialog-close]="true">Yes</button>
-  </md-dialog-actions>
+  <h2 mat-dialog-title>Leave us a feedback</h2>
+  <mat-dialog-content>Are you disgusted and ANGRY to be human in today's world ?</mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close>No</button>
+    <button mat-button [mat-dialog-close]="true">Yes</button>
+  </mat-dialog-actions>
 `
 })
 export class ToolbarFeedbackDialog {}

@@ -4,7 +4,16 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from '@angular/material';
+import { 
+  MatButtonModule,
+  MatCheckboxModule,
+  MatMenuModule,
+  MatDialogModule,
+  MatIconModule,
+  MatCardModule,
+  MatInputModule
+} from '@angular/material';
+
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
 import { LoginComponent } from './views/login/login.component';
@@ -17,11 +26,15 @@ import { LoginService } from 'app/core/services/login.service';
     FormsModule,
     RouterModule,
     HttpModule,
-    MaterialModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatIconModule,
+    MatCardModule
   ],
   exports: [
     BrowserAnimationsModule,
-    MaterialModule,
     //Componentes
     ToolbarComponent,
     ToolbarFeedbackDialog,
