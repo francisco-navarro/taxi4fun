@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
-// Lo dejamos preparado para la proxima version de material
-import {} from '@angular/material';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
 import { LoginComponent } from './views/login/login.component';

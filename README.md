@@ -42,3 +42,9 @@ Se han generado los scripts para desplegarlo en heroku.
 ## Para desplegar en producción se ejecuta
 `ng build --aot -prod`
 `node server.js`
+
+## Desplegar con la api mock
+Levantar el api mock con
+`npm run api`
+Después levantar
+`npm run develop`
