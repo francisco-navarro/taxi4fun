@@ -6,6 +6,9 @@ El proyecto está preparado para desplegar en heroku mediante npm scripts (herok
 
 Tiene también dockerfile para generar las imágenes y desplegar. El docker arranca un express en el puerto indicado por variable de entorno env.PORT
 
+[![Dependencies](https://david-dm.org/taxy4fun/backoffice-y4f/repo.svg)](https://david-dm.org/taxy4fun/backoffice-y4f/)
+
+
 ### Branches CI
 
 **master**
@@ -14,12 +17,7 @@ Tiene también dockerfile para generar las imágenes y desplegar. El docker arra
 [![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
 [![Code Climate](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/gpa.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f)
 [![Test Coverage](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/coverage.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f/coverage)
-[![Dependencies](https://david-dm.org/taxy4fun/backoffice-y4f/repo.svg)](https://david-dm.org/taxy4fun/backoffice-y4f/)
 
-
-**develop**
-
-[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=develop)](https://travis-ci.org/taxy4fun/backoffice-y4f)
 
 Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 
@@ -27,17 +25,20 @@ Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 ## Development server
 
 `npm run api` para levantar el api mock con dyson
-`ng serve` para arrancar servidor en `http://localhost:4200/`
+
+`ng run develop` para arrancar servidor en `http://localhost:4200/`
 
 ## Build
 
 `ng build` construir en `dist/`
 
-## Running unit tests
+## Running tests
+
+Tests unitarios
 
 `ng test`
 
-## Running end-to-end tests
+Tests e2e con selenium y protractor
 
 `ng e2e`
 

@@ -10,9 +10,13 @@ import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
 import { LoginComponent } from './views/login/login.component';
 import { AuthService } from 'app/core/services/auth.service';
 import { LoginService } from 'app/core/services/login.service';
+import { ROUTES } from 'app/core/core.routes';
+
 
 @NgModule({
   imports: [
+    RouterModule,
+    RouterModule.forRoot(ROUTES),
     BrowserModule,
     FormsModule,
     RouterModule,
