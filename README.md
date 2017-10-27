@@ -1,9 +1,10 @@
 # Backoffice Taxi4fun
 
-Proyecto de gestión de backoffice en angular 4.3
+Modulo del front del proyecto https://github.com/taxy4fun en angular 4.4
+El proyecto está preparado para desplegar en heroku mediante npm scripts (heroku-postbuild).
+Tiene también dockerfile para generar las imágenes y desplegar. El docker arranca un express en el puerto indicado por variable de entorno env.PORT
 
-## Branches
-
+### Branches CI
 
 **master**
 
@@ -23,6 +24,7 @@ Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 
 ## Development server
 
+`npm run api` para levantar el api mock con dyson
 `ng serve` para arrancar servidor en `http://localhost:4200/`
 
 ## Build
@@ -37,14 +39,7 @@ Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 
 `ng e2e`
 
-Se han generado los scripts para desplegarlo en heroku.
 
 ## Para desplegar en producción se ejecuta
-`ng build --aot -prod`
-`node server.js`
-
-## Desplegar con la api mock
-Levantar el api mock con
-`npm run api`
-Después levantar
-`npm run develop`
+El paso previo ejecuta `ng build --aot -prod` 
+El despliegue ejecuta `node server.js` que arranca un node.
