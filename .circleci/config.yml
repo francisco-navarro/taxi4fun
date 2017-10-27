@@ -12,9 +12,14 @@ jobs:
     steps:
       - checkout
 
-      - run: npm install -g @angular/cli
+      - run: sudo npm install -g @angular/cli
 
       - run: npm install
+
+      - save_cache:
+        key: dependency-cache-{{ checksum "package.json" }}
+        paths:
+            - ./node_modules
 
       - run: ng build --aot --no-progress
 
