@@ -21,11 +21,6 @@ jobs:
 
       - run: sudo npm install -g @angular/cli
 
-      - save_cache:
-          key: angular-cli-cache-{{ checksum "package.json" }}
-          paths:
-              - /usr/local/lib/node_modules/@angular/cli/
-
       - run: sudo npm install -g codeclimate-test-reporter
 
       - run: npm install
