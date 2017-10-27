@@ -18,6 +18,7 @@ import { ROUTES } from 'app/core/core.routes';
     RouterModule,
     RouterModule.forRoot(ROUTES),
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     RouterModule,
     HttpModule,
