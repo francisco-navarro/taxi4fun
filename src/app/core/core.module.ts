@@ -20,9 +20,6 @@ import { LoginService } from 'app/core/services/login.service';
     MaterialModule
   ],
   exports: [
-    BrowserAnimationsModule,
-    MaterialModule,
-    //Componentes
     ToolbarComponent,
     ToolbarFeedbackDialog,
     WelcomeComponent
