@@ -12,6 +12,8 @@ jobs:
     steps:
       - checkout
 
+      - run: npm install -g @angular/cli
+
       - run: npm install
 
       - run: ng build --aot --no-progress
