@@ -11,16 +11,15 @@ export class AuthService  implements CanActivate {
     this.logged = false;
   }
 
-  changeStatus(status:boolean) {
+  changeStatus(status:boolean): boolean {
     // TODO: guardar en local storage
     this.logged = status;
     return this.logged;
   }
 
-  canActivate() {
+  canActivate(): Observable<boolean> {
     if(!this.logged) {
       this.router.navigate(['/login']);
-      return false;
     }
     return  Observable.of(this.logged);
   }

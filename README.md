@@ -1,50 +1,49 @@
 # Backoffice Taxi4fun
 
-Proyecto de gestión de backoffice en angular 4.3
+Modulo del front del proyecto https://github.com/taxy4fun en angular 4.4
 
-## Branches
+El proyecto está preparado para desplegar en heroku mediante npm scripts (heroku-postbuild).
 
+Tiene también dockerfile para generar las imágenes y desplegar. El docker arranca un express en el puerto indicado por variable de entorno env.PORT
+
+[![Dependencies](https://david-dm.org/taxy4fun/backoffice-y4f/repo.svg)](https://david-dm.org/taxy4fun/backoffice-y4f/)
+
+
+### Branches CI
 
 **master**
 
 
-[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
+
+[![CircleCI](https://circleci.com/gh/francisco-navarro/front-taxi4fun.svg?style=shield)](https://circleci.com/gh/francisco-navarro/front-taxi4fun)
 [![Code Climate](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/gpa.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f)
 [![Test Coverage](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/coverage.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f/coverage)
-[![Dependencies](https://david-dm.org/taxy4fun/backoffice-y4f/repo.svg)](https://david-dm.org/taxy4fun/backoffice-y4f/)
 
-
-**develop**
-
-[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=develop)](https://travis-ci.org/taxy4fun/backoffice-y4f)
 
 Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 
 
 ## Development server
 
-`ng serve` para arrancar servidor en `http://localhost:4200/`
+`npm run api` para levantar el api mock con dyson
+
+`ng run develop` para arrancar servidor en `http://localhost:4200/`
 
 ## Build
 
 `ng build` construir en `dist/`
 
-## Running unit tests
+## Running tests
+
+Tests unitarios
 
 `ng test`
 
-## Running end-to-end tests
+Tests e2e con selenium y protractor
 
 `ng e2e`
 
-Se han generado los scripts para desplegarlo en heroku.
 
 ## Para desplegar en producción se ejecuta
-`ng build --aot -prod`
-`node server.js`
-
-## Desplegar con la api mock
-Levantar el api mock con
-`npm run api`
-Después levantar
-`npm run develop`
+El paso previo ejecuta `ng build --aot -prod` 
+El despliegue ejecuta `node server.js` que arranca un node.
