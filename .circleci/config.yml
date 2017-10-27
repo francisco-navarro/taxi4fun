@@ -17,9 +17,9 @@ jobs:
             - npm-deps-{{ checksum "package.json" }}
             - npm-deps-
 
-      - run: sudo npm install @angular/cli
+      - run: sudo npm install -g @angular/cli
 
-      - run: sudo npm install codeclimate-test-reporter
+      - run: sudo npm install -g codeclimate-test-reporter
 
       - run: npm install
 
