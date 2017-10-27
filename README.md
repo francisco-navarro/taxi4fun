@@ -1,7 +1,9 @@
 # Backoffice Taxi4fun
 
 Modulo del front del proyecto https://github.com/taxy4fun en angular 4.4
+
 El proyecto está preparado para desplegar en heroku mediante npm scripts (heroku-postbuild).
+
 Tiene también dockerfile para generar las imágenes y desplegar. El docker arranca un express en el puerto indicado por variable de entorno env.PORT
 
 ### Branches CI
