@@ -13,6 +13,7 @@ jobs:
       - checkout
 
       - run: sudo npm install -g @angular/cli
+      - run: sudo npm install -g codeclimate-test-reporter
 
       - run: npm install
 
@@ -24,4 +25,6 @@ jobs:
       - run: ng build --aot --no-progress
 
       - run: ng test --watch=false --code-coverage
+
+      - run: codeclimate-test-reporter < coverage/lcov.info
 
