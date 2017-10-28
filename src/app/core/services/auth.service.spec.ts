@@ -18,4 +18,10 @@ describe('AuthService', () => {
       expect(result).toBeFalsy());
     }));
 
+  it('should be activate when login', inject([AuthService], (service: AuthService) => {
+    service.changeStatus(true);
+    service.canActivate().subscribe(result => 
+      expect(result).toBeTruthy());
+    }));
+
 });
