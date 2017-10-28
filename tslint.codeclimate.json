@@ -1,6 +1,5 @@
 {
   "extends": "tslint:latest",
-  "exclude_paths": ["**/*.conf.js"],
   "rules": {
     "arrow-return-shorthand": true,
     "callable-types": true,
