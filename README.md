@@ -16,7 +16,7 @@ Tiene también dockerfile para generar las imágenes y desplegar. El docker arra
 
 
 [![CircleCI](https://circleci.com/gh/francisco-navarro/front-taxi4fun.svg?style=shield)](https://circleci.com/gh/francisco-navarro/front-taxi4fun)
-[![Maintainability](https://api.codeclimate.com/v1/badges/f56bac70c9d6c5888bec/maintainability)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/maintainability)(https://codeclimate.com/github/francisco-navarro/front-taxi4fun)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f56bac70c9d6c5888bec/maintainability)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/maintainability)
 [![Test Coverage](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/badges/coverage.svg)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/coverage)
 
 
