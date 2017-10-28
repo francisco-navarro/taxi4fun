@@ -27,7 +27,7 @@ Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 
 `npm run api` para levantar el api mock con dyson
 
-`ng run develop` para arrancar servidor en `http://localhost:4200/`
+`npm run develop` para arrancar servidor en `http://localhost:4200/`
 
 ## Build
 
