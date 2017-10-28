@@ -16,8 +16,8 @@ Tiene también dockerfile para generar las imágenes y desplegar. El docker arra
 
 
 [![CircleCI](https://circleci.com/gh/francisco-navarro/front-taxi4fun.svg?style=shield)](https://circleci.com/gh/francisco-navarro/front-taxi4fun)
-[![Code Climate](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/gpa.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f)
-[![Test Coverage](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/coverage.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f/coverage)
+[![Code Climate](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/badges/gpa.svg)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun)
+[![Test Coverage](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/badges/coverage.svg)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/coverage)
 
 
 Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
