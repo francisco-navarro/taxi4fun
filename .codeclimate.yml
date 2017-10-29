@@ -12,4 +12,3 @@ exclude_paths:
   - typings
   - coverage
   - dist
-  - *.conf.json
