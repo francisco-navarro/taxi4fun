@@ -6,7 +6,7 @@ El proyecto está preparado para desplegar en heroku mediante npm scripts (herok
 
 Tiene también dockerfile para generar las imágenes y desplegar. El docker arranca un express en el puerto indicado por variable de entorno env.PORT
 
-[![Dependencies](https://david-dm.org/taxy4fun/backoffice-y4f/status.svg)](https://david-dm.org/taxy4fun/backoffice-y4f/)
+[![Dependencies](https://david-dm.org/francisco-navarro/front-taxi4fun/status.svg)](https://david-dm.org/francisco-navarro/front-taxi4fun/)
 
 
 ### Branches CI
