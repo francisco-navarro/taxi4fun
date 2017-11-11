@@ -4,13 +4,13 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from '@angular/material';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
 import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
 import { LoginComponent } from './views/login/login.component';
 import { AuthService } from 'app/core/services/auth.service';
 import { LoginService } from 'app/core/services/login.service';
 import { ROUTES } from 'app/core/core.routes';
+import { MaterialModule } from 'app/core/material.module';
 
 
 @NgModule({
@@ -19,10 +19,10 @@ import { ROUTES } from 'app/core/core.routes';
     RouterModule.forRoot(ROUTES),
     BrowserModule,
     BrowserAnimationsModule,
+    MaterialModule,
     FormsModule,
     RouterModule,
     HttpModule,
-    MaterialModule
   ],
   exports: [
     ToolbarComponent,
@@ -33,6 +33,7 @@ import { ROUTES } from 'app/core/core.routes';
     AuthService,
     LoginService
   ],
+  entryComponents: [ ToolbarFeedbackDialog ],
   declarations: [
     ToolbarComponent,
     ToolbarFeedbackDialog,
