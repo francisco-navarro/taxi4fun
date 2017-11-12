@@ -12,7 +12,7 @@ export class ToolbarComponent {
   openDialog() {
     this.dialog.open(ToolbarFeedbackDialog);
   }
-}∫
+}
 
 @Component({
   selector: 'toolbar-feedback-dialog',

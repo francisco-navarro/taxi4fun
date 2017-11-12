@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RegisterComponent } from './views/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { ROUTES } from './register.routes';
-import { MaterialModule } from './material.deps';
-import { UserComponent } from './views/register/components/user/user.component';
-import { DriverComponent } from './views/register/components/driver/driver.component';
+
 import { CoreModule } from '../core/core.module';
-import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
+import { MaterialModule } from './material.deps';
+import { ROUTES } from './register.routes';
+import { DriverComponent } from './views/register/components/driver/driver.component';
+import { UserComponent } from './views/register/components/user/user.component';
+import { RegisterComponent } from './views/register/register.component';
 
 @NgModule({
   imports: [

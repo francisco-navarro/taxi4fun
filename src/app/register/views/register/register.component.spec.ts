@@ -1,12 +1,13 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { APP_BASE_HREF } from '@angular/common';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RegisterComponent } from './register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CoreModule } from '../../../core/core.module';
 import { MaterialModule } from '../../material.deps';
 import { DriverComponent } from './components/driver/driver.component';
 import { UserComponent } from './components/user/user.component';
-import { CoreModule } from '../../../core/core.module';
+import { RegisterComponent } from './register.component';
 
 describe('RegisterComponent', () => {
   let component: RegisterComponent;

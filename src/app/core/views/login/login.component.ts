@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   sendLogin() {
     this.loginService.send().subscribe(response => {
-      if (response) {∫
+      if (response) {
         this.router.navigate(['/welcome']);
       }
     });
