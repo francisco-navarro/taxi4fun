@@ -1,23 +1,15 @@
-# Backoffice Taxi4fun
+# Front web Taxi4fun
 
-Modulo del front del proyecto https://github.com/taxy4fun en angular 4.4
+[![CircleCI](https://circleci.com/gh/francisco-navarro/front-taxi4fun.svg?style=shield)](https://circleci.com/gh/francisco-navarro/front-taxi4fun)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f56bac70c9d6c5888bec/maintainability)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/maintainability)
+[![Test Coverage](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/badges/coverage.svg)](https://codeclimate.com/github/francisco-navarro/front-taxi4fun/coverage)
+[![Dependencies](https://david-dm.org/francisco-navarro/front-taxi4fun/status.svg)](https://david-dm.org/francisco-navarro/front-taxi4fun/)
+
+Módulo del front en Angular del proyecto https://github.com/taxy4fun (más información de la API en [requirements](https://github.com/taxy4fun/boot-cantaloupe/blob/master/docs/requirements.adoc)).
 
 El proyecto está preparado para desplegar en heroku mediante npm scripts (heroku-postbuild).
 
 Tiene también dockerfile para generar las imágenes y desplegar. El docker arranca un express en el puerto indicado por variable de entorno env.PORT
-
-[![Dependencies](https://david-dm.org/taxy4fun/backoffice-y4f/repo.svg)](https://david-dm.org/taxy4fun/backoffice-y4f/)
-
-
-### Branches CI
-
-**master**
-
-
-[![Build Status](https://travis-ci.org/taxy4fun/backoffice-y4f.svg?branch=master)](https://travis-ci.org/taxy4fun/backoffice-y4f)
-[![CircleCI](https://circleci.com/gh/francisco-navarro/front-taxi4fun.svg?style=shield)](https://circleci.com/gh/francisco-navarro/front-taxi4fun)
-[![Code Climate](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/gpa.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f)
-[![Test Coverage](https://codeclimate.com/github/taxy4fun/backoffice-y4f/badges/coverage.svg)](https://codeclimate.com/github/taxy4fun/backoffice-y4f/coverage)
 
 
 Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
@@ -27,7 +19,7 @@ Despliegue de prueba en : https://backoffice-4yf-develop.herokuapp.com/
 
 `npm run api` para levantar el api mock con dyson
 
-`ng run develop` para arrancar servidor en `http://localhost:4200/`
+`npm run develop` para arrancar servidor en `http://localhost:4200/`
 
 ## Build
 

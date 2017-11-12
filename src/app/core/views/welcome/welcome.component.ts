@@ -20,7 +20,7 @@ export class WelcomeComponent implements OnInit {
   },{
     uri: 'cars',
     text: 'Coches',
-    icon: 'assignment_return',
+    icon: 'assignment_ret∫urn',
     description: 'Gestionar mis coches'
   }];
 

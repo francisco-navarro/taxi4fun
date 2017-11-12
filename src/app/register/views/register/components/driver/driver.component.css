@@ -1,0 +1,12 @@
+form {
+  display:flex;
+  flex-direction: column;
+}
+md-toolbar {
+  background-color: #f9683a;
+}
+.end {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}

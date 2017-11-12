@@ -1,16 +1,19 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule }   from '@angular/router';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
+
+import { ContentComponent } from './components/content/content.component';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
-import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
+import { ROUTES } from './core.routes';
+import { MaterialModule } from './material.deps';
+import { AuthService } from './services/auth.service';
+import { LoginService } from './services/login.service';
 import { LoginComponent } from './views/login/login.component';
-import { AuthService } from 'app/core/services/auth.service';
-import { LoginService } from 'app/core/services/login.service';
-import { ROUTES } from 'app/core/core.routes';
+import { WelcomeComponent } from './views/welcome/welcome.component';
 
 
 @NgModule({
@@ -19,25 +22,29 @@ import { ROUTES } from 'app/core/core.routes';
     RouterModule.forRoot(ROUTES),
     BrowserModule,
     BrowserAnimationsModule,
+    MaterialModule,
     FormsModule,
     RouterModule,
     HttpModule,
-    MaterialModule
   ],
   exports: [
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    WelcomeComponent
+    WelcomeComponent,
+    ContentComponent
   ],
   providers: [
     AuthService,
-    LoginService
+    LoginService,
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
   ],
+  entryComponents: [ ToolbarFeedbackDialog ],
   declarations: [
     ToolbarComponent,
     ToolbarFeedbackDialog,
     WelcomeComponent,
-    LoginComponent
+    LoginComponent,
+    ContentComponent
   ]
 })
 export class CoreModule {};

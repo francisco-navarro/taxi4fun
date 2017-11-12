@@ -1,21 +1,21 @@
 <div class="welcome" style="text-align:center">
-    <md-card class="title-card">
+    <mat-card class="title-card">
       <h1>
         <img class="small-logo" src="../assets/logov2.png"/>
         taxy4fun
       </h1>
       <h2>Welcome</h2>
       <h3>Here are some links to help you start: </h3>
-    </md-card>
+    </mat-card>
     
     <section class="section-links flex-row wrap">
-      <md-card *ngFor="let link of links" routerLink="/{{link.uri}}" class="tarjeta">
-        <h4 md-card-title>
-          <md-icon md-list-icon color="primary">{{link.icon}}</md-icon>
+      <mat-card *ngFor="let link of links" routerLink="/{{link.uri}}" class="tarjeta">
+        <h4 mat-card-title>
+          <mat-icon mat-list-icon color="primary">{{link.icon}}</mat-icon>
             <a routerLink="/{{link.uri}}">{{link.text}}</a>
         </h4>
-        <p md-line>{{link.description}}</p>
-      </md-card>
+        <p mat-line>{{link.description}}</p>
+      </mat-card>
     </section>
   </div>
   

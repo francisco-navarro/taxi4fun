@@ -3,6 +3,11 @@ engines:
     enabled: true
     channel: beta
     config: tslint.codeclimate.json
+    checks:
+      max-classes-per-file:
+        enabled: false
+      no-inferrable-types:
+        enabled: false
 ratings:
   paths:
     - "**.ts"

@@ -1,15 +1,15 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { RouterModule }   from '@angular/router';
-// import { ChartsModule } from 'ng2-charts';
-
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CoreModule } from 'app/core/core.module';
+import { RegisterModule } from 'app/register/register.module';
+
 import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
-
 
 @NgModule({
     imports: [
       CoreModule,
+      RegisterModule,
       RouterModule,
       RouterModule.forRoot(ROUTES),
   ],
