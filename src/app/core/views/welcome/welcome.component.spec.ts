@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MaterialModule } from '@angular/material';
 
 import { WelcomeComponent } from './welcome.component';
 import { RouterLinkStubDirective } from 'app/core/testing/router/router.stubs';
+import { MaterialModule } from 'app/core/material.deps';
 
 describe('WelcomeComponent', () => {
   let component: WelcomeComponent;

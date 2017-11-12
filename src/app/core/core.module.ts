@@ -10,7 +10,8 @@ import { LoginComponent } from './views/login/login.component';
 import { AuthService } from 'app/core/services/auth.service';
 import { LoginService } from 'app/core/services/login.service';
 import { ROUTES } from 'app/core/core.routes';
-import { MaterialModule } from 'app/core/material.module';
+import { MaterialModule } from 'app/core/material.deps';
+import { ContentComponent } from 'app/core/components/content/content.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MaterialModule } from 'app/core/material.module';
   exports: [
     ToolbarComponent,
     ToolbarFeedbackDialog,
-    WelcomeComponent
+    WelcomeComponent,
+    ContentComponent
   ],
   providers: [
     AuthService,
@@ -38,7 +40,8 @@ import { MaterialModule } from 'app/core/material.module';
     ToolbarComponent,
     ToolbarFeedbackDialog,
     WelcomeComponent,
-    LoginComponent
+    LoginComponent,
+    ContentComponent
   ]
 })
 export class CoreModule {};

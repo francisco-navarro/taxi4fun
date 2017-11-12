@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Observable } from 'rxjs/Observable';
@@ -7,6 +6,7 @@ import 'rxjs/add/observable/of';
 
 import { LoginComponent } from './login.component';
 import { LoginService } from 'app/core/services/login.service';
+import { MaterialModule } from 'app/core/material.deps';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
