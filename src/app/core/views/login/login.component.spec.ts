@@ -5,8 +5,8 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
 import { LoginComponent } from './login.component';
-import { LoginService } from 'app/core/services/login.service';
-import { MaterialModule } from 'app/core/material.deps';
+import { LoginService } from '../../services/login.service';
+import { MaterialModule } from '../../material.deps';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -19,8 +19,14 @@ describe('LoginComponent', () => {
     };
 
     TestBed.configureTestingModule({
-      imports: [ MaterialModule, BrowserAnimationsModule, RouterTestingModule ],
-      providers: [ {provide: LoginService, useValue: loginServiceStub } ],
+      imports: [ 
+        MaterialModule,
+        BrowserAnimationsModule,
+        RouterTestingModule
+      ],
+      providers: [
+        {provide: LoginService, useValue: loginServiceStub }
+      ],
       declarations: [ LoginComponent ]
     })
     .compileComponents();
