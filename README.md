@@ -1,6 +1,6 @@
 # Backoffice Taxi4fun
 
-Modulo del front del proyecto https://github.com/taxy4fun en angular 5. Actualizado a 5.0 y material 5.rc0
+Módulo del front en Anguar del proyecto https://github.com/taxy4fun (más información en [requirements](https://github.com/taxy4fun/boot-cantaloupe/blob/master/docs/requirements.adoc)).
 
 El proyecto está preparado para desplegar en heroku mediante npm scripts (heroku-postbuild).
 
