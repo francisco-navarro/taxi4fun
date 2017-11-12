@@ -4,6 +4,7 @@
 @import './palette2.css';
 /* URL Paleta: https://material.io/color/#!/?view.left=0&view.right=0&primary.color=BF360C&secondary.color=616161 */
 
+@import './helpers.css';
 
 a {
   color: #bf360c;

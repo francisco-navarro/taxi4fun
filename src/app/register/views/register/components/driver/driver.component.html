@@ -1,78 +1,95 @@
-<form>
-  <div [hidden]>
-    <h2 class="title-primary">
-      <mat-icon color="primary">edit</mat-icon>
-      &nbsp;
-      <span>Datos de alta</span>
-    </h2>
-    <h3>Datos básicos de un conductor de taxi</h3>
+<div margin padding-top class="flex">
+  <img src="../assets/drive.png" width="90px" height="90px"/>
+  <div margin-left>
+    <h3 no-margin>Regístrate para conducir</h3>
     <p>
-      <mat-input-container>
-        <input matInput placeholder="Nombre" [(ngModel)]="name" name="name">
-      </mat-input-container>
-      <mat-input-container>
-        <input matInput placeholder="Apellidos" [(ngModel)]="lastName" name="lastName">
-      </mat-input-container>
-    </p>
-    <p>
-      <mat-input-container>
-        <input matInput placeholder="Dirección" [(ngModel)]="address" name="address">
-      </mat-input-container>
-      <mat-input-container>
-        <input matInput placeholder="Ciudad" [(ngModel)]="city" name="city">
-      </mat-input-container>
-    </p>
-    <p>
-      <mat-input-container>
-        <input matInput placeholder="Código postal" [(ngModel)]="postalCode" name="postalCode">
-      </mat-input-container>
-      <mat-input-container>
-        <input matInput placeholder="Teléfono" [(ngModel)]="phone" name="phone">
-      </mat-input-container>
-    </p>
-    <h3>Datos de identificación</h3>
-    <p>
-      <mat-input-container>
-        <input matInput placeholder="Correo electrónico" [(ngModel)]="email" name="email">
-      </mat-input-container>
-    </p>
-    <p>
-      <mat-input-container>
-        <input matInput placeholder="Password" [(ngModel)]="password" name="password">
-      </mat-input-container>
-      <mat-input-container>
-        <input matInput placeholder="Repetir password" [(ngModel)]="password2" name="password2">
-      </mat-input-container>
-    </p>
-    <h3>Datos del permiso de conducción del reino de España</h3>
-    <p>
-      <mat-input-container>
-        <input matInput placeholder="Número" [(ngModel)]="driverLicense" name="driverLicense">
-      </mat-input-container>
-      <mat-input-container>
-        <input matInput placeholder="Caducidad" [(ngModel)]="driverLicenseRenovation" name="driverLicenseRenovation">
-      </mat-input-container>
-    </p>
-
-    <p class="end">
-      <button mat-raised-button color="primary">Siguiente</button>
+      Puedes conducir cuando quieras, de día o de noche, tú decides cuándo conduces. Los precios de los viajes empiezan con un importe base, que después aumenta en función del tiempo y de la distancia. 
     </p>
   </div>
+</div>
+<mat-horizontal-stepper margin>
+  <mat-step>
+    <ng-template matStepLabel>Información personal</ng-template>
+    <form>
+      <h3>Datos básicos de un conductor de taxi</h3>
+      <p>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Nombre" [(ngModel)]="name" name="name">
+        </mat-input-container>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Apellidos" [(ngModel)]="lastName" name="lastName">
+        </mat-input-container>
+      </p>
+      <p>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Dirección" [(ngModel)]="address" name="address">
+        </mat-input-container>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Ciudad" [(ngModel)]="city" name="city">
+        </mat-input-container>
+      </p>
+      <p>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Código postal" [(ngModel)]="postalCode" name="postalCode">
+        </mat-input-container>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Teléfono" [(ngModel)]="phone" name="phone">
+        </mat-input-container>
+      </p>
+      <h3>Datos del permiso de conducción de España</h3>
+      <p>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Número" [(ngModel)]="driverLicense" name="driverLicense">
+        </mat-input-container>
+        <mat-input-container>
+          <input matInput placeholder="Caducidad" [(ngModel)]="driverLicenseRenovation" name="driverLicenseRenovation">
+        </mat-input-container>
+      </p>
 
-  <div>
-    <h2 class="title-primary">
-      <mat-icon color="primary">credit_card</mat-icon>
-      &nbsp;
-      <span>Datos de pago</span>
-    </h2>
-    <p>
-      <mat-select placeholder="Método de pago">
-        <mat-option value="1">VISA</mat-option>
-        <mat-option value="1">PayPal</mat-option>
-      </mat-select>
+      <p class="end">
+        <button mat-raised-button matStepperNext color="primary">Siguiente</button>
+      </p>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Datos de pago</ng-template>
+    <div>
+      <h3>Datos de identificación</h3>
+      <p>
+        <mat-input-container>
+          <input matInput placeholder="Correo electrónico" [(ngModel)]="email" name="email">
+        </mat-input-container>
+      </p>
+      <p>
+        <mat-input-container margin-right>
+          <input matInput placeholder="Password" [(ngModel)]="password" name="password">
+        </mat-input-container>
+        <mat-input-container>
+          <input matInput placeholder="Repetir password" [(ngModel)]="password2" name="password2">
+        </mat-input-container>
+      </p>
+      <h3>Forma de pago</h3>
+      <p margin>
+        <mat-select placeholder="Método de pago">
+          <mat-option value="1">VISA</mat-option>
+          <mat-option value="1">PayPal</mat-option>
+        </mat-select>
+      </p>
+      <p class="end">
+        <button mat-raised-button matStepperNext color="primary">Siguiente</button>
+      </p>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Finalizar</ng-template>
+    <p margin>
+      Usted confirma que toda la información es correcta. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
     </p>
     <p class="end">
-      <button mat-raised-button color="primary">Siguiente</button>
+      <span margin-right>
+        <button mat-button matStepperPrevious>Volver</button>
+      </span>      
+      <button mat-raised-button color="primary">Finalizar</button>
     </p>
-  </div>
-</form>
+  </mat-step>
+</mat-horizontal-stepper>

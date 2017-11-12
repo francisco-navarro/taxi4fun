@@ -1679,6 +1679,9 @@ input.mat-input-element:-webkit-autofill+.mat-input-placeholder .mat-placeholder
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
   background-color: #bf360c;
 }
+.mat-step-header .mat-step-icon {
+  background-color: #bf360c;
+}
 
 .mat-toolbar.mat-accent {
   background: #616161;
