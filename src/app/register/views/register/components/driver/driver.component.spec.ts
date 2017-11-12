@@ -12,7 +12,7 @@ describe('DriverComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ DriverComponent ],
-      imports: [ 
+      imports: [
         MaterialModule,
         FormsModule,
         ReactiveFormsModule,

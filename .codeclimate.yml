@@ -6,6 +6,8 @@ engines:
     checks:
       max-classes-per-file:
         enabled: false
+      no-inferrable-types:
+        enabled: false
 ratings:
   paths:
     - "**.ts"
