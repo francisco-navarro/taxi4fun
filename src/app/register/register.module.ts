@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RegisterComponent } from './views/register/register.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule }   from '@angular/router';
 import { ROUTES } from './register.routes';
 import { MaterialModule } from './material.deps';
