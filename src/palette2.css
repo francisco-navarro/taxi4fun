@@ -1676,6 +1676,10 @@ input.mat-input-element:-webkit-autofill+.mat-input-placeholder .mat-placeholder
   color: rgba(255, 255, 255, .87)
 }
 
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #bf360c;
+}
+
 .mat-toolbar.mat-accent {
   background: #616161;
   color: #fff

@@ -5,13 +5,14 @@ import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
-import { WelcomeComponent } from 'app/core/views/welcome/welcome.component';
+import { WelcomeComponent } from './views/welcome/welcome.component';
 import { LoginComponent } from './views/login/login.component';
-import { AuthService } from 'app/core/services/auth.service';
-import { LoginService } from 'app/core/services/login.service';
-import { ROUTES } from 'app/core/core.routes';
-import { MaterialModule } from 'app/core/material.deps';
-import { ContentComponent } from 'app/core/components/content/content.component';
+import { AuthService } from './services/auth.service';
+import { LoginService } from './services/login.service';
+import { ROUTES } from './core.routes';
+import { MaterialModule } from './material.deps';
+import { ContentComponent } from './components/content/content.component';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ContentComponent } from 'app/core/components/content/content.component'
   ],
   providers: [
     AuthService,
-    LoginService
+    LoginService,
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
   ],
   entryComponents: [ ToolbarFeedbackDialog ],
   declarations: [

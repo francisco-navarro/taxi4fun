@@ -5,6 +5,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatDialogModule,
     MatCardModule,
     MatInputModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule {};
