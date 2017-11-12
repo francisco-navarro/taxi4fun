@@ -8,17 +8,17 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class DriverComponent implements OnInit {
 
-  name: String = '';
-  lastName: String = '';
-  password: String = '';
-  password2: String = '';
-  address: String = '';
-  city: String = '';
-  postalCode: String = '';
-  email: String = '';
-  phone: String = '';
-  driverLicense: String = '';
-  driverLicenseRenovation: String = '';
+  name: string = '';
+  lastName: string = '';
+  password: string = '';
+  password2: string = '';
+  address: string = '';
+  city: string = '';
+  postalCode: string = '';
+  email: string = '';
+  phone: string = '';
+  driverLicense: string = '';
+  driverLicenseRenovation: string = '';
   state;
 
   constructor() { }
