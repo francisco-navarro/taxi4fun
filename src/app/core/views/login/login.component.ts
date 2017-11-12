@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
 import { LoginService } from '../../services/login.service';
 
 @Component({
@@ -18,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   sendLogin() {
     this.loginService.send().subscribe(response => {
-      if (response) {
+      if (response) {∫
         this.router.navigate(['/welcome']);
       }
     });

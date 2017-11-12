@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { MatIconModule } from '@angular/material/icon';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'y4f-toolbar',
@@ -13,7 +12,7 @@ export class ToolbarComponent {
   openDialog() {
     this.dialog.open(ToolbarFeedbackDialog);
   }
-}
+}∫
 
 @Component({
   selector: 'toolbar-feedback-dialog',

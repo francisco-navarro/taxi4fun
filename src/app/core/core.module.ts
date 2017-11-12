@@ -1,18 +1,19 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+
+import { ContentComponent } from './components/content/content.component';
 import { ToolbarComponent, ToolbarFeedbackDialog } from './components/toolbar/toolbar.component';
-import { WelcomeComponent } from './views/welcome/welcome.component';
-import { LoginComponent } from './views/login/login.component';
-import { AuthService } from './services/auth.service';
-import { LoginService } from './services/login.service';
 import { ROUTES } from './core.routes';
 import { MaterialModule } from './material.deps';
-import { ContentComponent } from './components/content/content.component';
-import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
+import { AuthService } from './services/auth.service';
+import { LoginService } from './services/login.service';
+import { LoginComponent } from './views/login/login.component';
+import { WelcomeComponent } from './views/welcome/welcome.component';
 
 
 @NgModule({
