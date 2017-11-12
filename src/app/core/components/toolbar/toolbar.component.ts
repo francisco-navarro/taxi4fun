@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-
 
 @Component({
   selector: 'y4f-toolbar',
