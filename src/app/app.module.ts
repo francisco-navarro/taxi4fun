@@ -1,8 +1,9 @@
-import { AppComponent } from './app.component';
-import { CoreModule } from 'app/core/core.module';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { RegisterModule } from 'app/register/register.module';
 import { RouterModule } from '@angular/router';
+import { CoreModule } from 'app/core/core.module';
+import { RegisterModule } from 'app/register/register.module';
+
+import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
 
 @NgModule({
