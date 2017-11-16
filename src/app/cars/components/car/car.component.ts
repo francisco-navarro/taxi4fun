@@ -6,7 +6,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./car.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class CarListComponent implements OnInit {
+export class CarComponent implements OnInit {
 
   constructor() { }
 

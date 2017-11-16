@@ -1,10 +1,10 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'y4f-car-list',
-  templateUrl: './car-dashboard.component.html'
+  templateUrl: './car-list.component.html'
 })
-export class CarDashboardComponent implements OnInit {
+export class CarListComponent implements OnInit {
 
   @Input() cars;
   @Output() carClicked = new EventEmitter();

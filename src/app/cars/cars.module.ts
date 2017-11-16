@@ -13,13 +13,11 @@ import { RouterModule } from '@angular/router';
     MaterialModule,
     RouterModule.forRoot(ROUTES)
   ],
-  entryComponents: [
-    CarComponent,
-    CarListComponent
-  ],
+  entryComponents: [],
   declarations: [
     CarDashboardComponent,
-    CarComponent
+    CarComponent,
+    CarListComponent
   ]
 })
 export class CarsModule { }
