@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatListModule, MatToolbarModule } from '@angular/material';
+import { MatListModule, MatToolbarModule, MatSelectModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -19,7 +19,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatTabsModule,
     MatButtonModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule {};

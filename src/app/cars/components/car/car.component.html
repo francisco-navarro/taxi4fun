@@ -1,3 +1,37 @@
+<h2 mat-dialog-title class="title-primary">
+  <mat-icon color="primary">edit</mat-icon> 
+  &nbsp;
+  <span *ngIf="isNew">Editar coche</span>
+  <span *ngIf="!isNew">Nuevo coche</span>
+</h2>
+<mat-dialog-content>
+
+<p>Edición de los detalles del vehículo. Los detalles serán validados.</p>
+
 <p>
-  car works!
+  <mat-input-container>
+    <input matInput placeholder="Alias" [(ngModel)]="name">
+  </mat-input-container>
 </p>
+
+<p>
+  <mat-input-container>
+    <input matInput placeholder="Matricula" [(ngModel)]="license">
+  </mat-input-container>
+</p>
+
+<p>
+  <mat-select placeholder="Tipo" [(ngModel)]="type">
+    <mat-option value="hatchback">Estandar</mat-option>
+    <mat-option value="sedan">Sedan</mat-option>
+    <mat-option value="van">Furgoneta</mat-option>
+  </mat-select>
+  <img class="icon-type" src="../assets/cars/{{type}}.svg"/>
+</p>
+<p></p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+<button mat-button mat-dialog-close>Cancel</button>
+&nbsp;
+<button mat-button mat-raised-button color="primary" (click)="save()" >Save</button>
+</mat-dialog-actions>

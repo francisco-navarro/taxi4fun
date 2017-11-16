@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarComponent } from './car.component';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from '../../material.deps';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
 describe('CarComponent', () => {
   let component: CarComponent;
@@ -8,7 +13,13 @@ describe('CarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CarComponent ]
+      declarations: [ CarComponent ],
+      imports: [ FormsModule, MaterialModule, BrowserAnimationsModule ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA],
+      providers: [
+        {provide: MAT_DIALOG_DATA, useValue: {} },
+        {provide: MatDialogRef, useValue: {} },
+      ]
     })
     .compileComponents();
   }));

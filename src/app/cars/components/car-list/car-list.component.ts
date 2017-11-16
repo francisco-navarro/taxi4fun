@@ -15,4 +15,8 @@ export class CarListComponent implements OnInit {
   ngOnInit() {
   }
 
+  public clickNew() {
+    
+  }
+
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, EventEmitter, Output, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'y4f-car',
@@ -8,9 +9,29 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class CarComponent implements OnInit {
 
-  constructor() { }
+  license;
+  name;
+  type;
+  isNew;
 
-  ngOnInit() {
-  }
+  @Output() onSave = new EventEmitter<any>();
+  
+    constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+      this.license = data.license;
+      this.name = data.name;
+      this.type = data.type;
+      this.isNew = !!data.license;
+     }
+  
+    ngOnInit() {
+    }
+  
+    save() {
+      this.onSave.emit({
+        license: this.license,
+        name: this.name,
+        type: this.type
+      });
+    }
 
 }
