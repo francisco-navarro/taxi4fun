@@ -1,0 +1,19 @@
+<mat-card>
+  <h2 class="title-primary">
+    <img class="title-icon" src="../assets/car-key.svg"/>
+    &nbsp;<span>Coches disponibles para el conductor</span>
+  </h2>
+  <mat-list>
+    <mat-list-item *ngFor="let car of cars" (click)="clicked(car)">
+      <img mat-list-icon  src="../assets/cars/{{car.type}}.svg"/>
+      <h4 mat-line role="link">{{car.name}}</h4>
+      <p mat-line>{{car.license}} </p>
+    </mat-list-item>
+  </mat-list>
+  
+  <div class="actions-div" align="end">
+    <button mat-fab color="primary">
+      <mat-icon class="mat-24" (click)="clickNew()">add</mat-icon>
+    </button>
+  </div>
+</mat-card>
