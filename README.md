@@ -39,3 +39,5 @@ Tests e2e con selenium y protractor
 ## Para desplegar en producción se ejecuta
 El paso previo ejecuta `ng build --aot -prod` 
 El despliegue ejecuta `node server.js` que arranca un node.
+
+new year
